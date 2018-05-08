@@ -3,7 +3,7 @@
 The code for a website to showcase King's Host book by [Irinel-Ramona Florescu](https://www.behance.net/iflorescu).
 The website was built with React and [Next.js](https://github.com/zeit/next.js/) by [Ionut-Cristian Florescu](https://www.linkedin.com/in/icflorescu/) and is currently hosted on [GitHub Pages](https://pages.github.com/).
 
-The source-code repo is [github.com/kings-host-book/src](https://github.com/kings-host-book/src), the build process outputs the minified code in the main organization repo [github.com/kings-host-book/kings-host-book.github.io](https://github.com/kings-host-book/kings-host-book.github.io).
+The source-code repo is [github.com/kingshost/src](https://github.com/kingshost/src), the build process outputs the minified code in the main organization repo [github.com/kingshost/kingshost.github.io](https://github.com/kingshost/kingshost.github.io).
 
 ## Where can I read the book?
 
@@ -15,7 +15,7 @@ THE HOST is a fantasy book available at [kingshost.cc](https://kingshost.cc).
 
 ### Code
 
-The code in this repository is UNLICENSED. Which means I am not granting you the right to copy it and use it as is for your own benefits, but since it's a publicly available example of a static website built with [Next.js](https://github.com/zeit/next.js/), feel free to have a look at it.
+The code in this repository is UNLICENSED. Which means I am not granting you the right to copy it and use it as is for your own benefits, but since it's a publicly available example of a static website built with React and [Next.js](https://github.com/zeit/next.js/), feel free to poke around.
 
 ### Book
 
