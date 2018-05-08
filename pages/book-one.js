@@ -19,11 +19,11 @@ class BookOnePage extends PureComponent {
   })
 
   componentWillUnmount() {
-    this.onBookViewClick.cache.clear();
+    this.onRequestBookClick.cache.clear();
   }
 
-  onBookViewClick = memoize((format) => {
-    if (global.ga) global.ga('send', 'event', 'Book View', 'view', format);
+  onRequestBookClick = memoize((format) => {
+    if (global.ga) global.ga('send', 'event', 'Book View Request', 'request', format);
   })
 
   render() {
@@ -42,20 +42,20 @@ class BookOnePage extends PureComponent {
                   title={`Download ${FULL_TITLE} as EPUB for free!`}
                   href={`${assetsPath}/${bookOneFileName}.epub`}
                   download={`${bookOneHumanReadableFileName}.epub`}
-                  onClick={this.onBookViewClick('epub')}
+                  onClick={this.onRequestBookClick('epub')}
                 >EPUB</a>
                 <a
                   className="download-link"
                   title={`Download ${FULL_TITLE} as MOBI for free!`}
                   href={`${assetsPath}/${bookOneFileName}.mobi`}
                   download={`${bookOneHumanReadableFileName}.mobi`}
-                  onClick={this.onBookViewClick('mobi')}
+                  onClick={this.onRequestBookClick('mobi')}
                 >MOBI</a>
                 <a
                   className="download-link"
                   title={`Open ${FULL_TITLE} as PDF for free!`}
                   href={`${assetsPath}/${bookOneFileName}.pdf`}
-                  onClick={this.onBookViewClick('pdf')}
+                  onClick={this.onRequestBookClick('pdf')}
                   target="_blank"
                 >PDF</a>
               </div>
