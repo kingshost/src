@@ -19,12 +19,8 @@ exports.iconSizes = [32, 16, 36, 48, 72, 96, 144, 192];
 exports.appleIconSizes = [57, 60, 72, 76, 114, 120, 144, 152, 180];
 exports.splashIconSize = 512;
 
-// eslint-disable-next-line no-multi-assign
-const googleAnalyticsTrackingId = exports.googleAnalyticsTrackingId = 'UA-118921725-1';
-
 exports.googleAnalyticsCode = `
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', '${googleAnalyticsTrackingId}');
+  window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+  ga('create', 'UA-118921725-1', 'auto');
+  ga('send', 'pageview');
 `.replace(/\n\s+/g, '');
