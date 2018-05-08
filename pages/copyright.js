@@ -5,8 +5,11 @@ import PageContent from '../components/PageContent';
 import IrinelRamonaFlorescuLdJson from '../components/IrinelRamonaFlorescuLdJson';
 import IonutCristianFlorescuLdJson from '../components/IonutCristianFlorescuLdJson';
 import externalLinkProps from '../util/externalLinkProps';
-import { bookAuthorName, websiteAuthor, bookTitle, websiteAuthorKeybaseUrl } from '../util/meta';
+import {
+  bookAuthorName, websiteAuthorName, bookTitle, bookAuthorKeybaseUsername, websiteAuthorKeybaseUsername
+} from '../util/meta';
 
+const KEYBASE_URL_PREFIX = 'keybase.io';
 const TITLE = 'Copyright & attribution';
 
 const CopyrightPage = () => (
@@ -70,11 +73,19 @@ const CopyrightPage = () => (
       <p>
         This website was built with JS, CSS, React, Next.js, Dragon's Blood resin and various
         other peculiar dark magic powders
-        by <a href="https://github.com/icflorescu" {...externalLinkProps}>{websiteAuthor}</a>.
+        by <a href="https://github.com/icflorescu" {...externalLinkProps}>{websiteAuthorName}</a>.
         He's a nice guy and an outstanding web developer.
       </p>
-      <h2>Identity proof</h2>
-      <p>{websiteAuthor}: <a href={`https://${websiteAuthorKeybaseUrl}`} {...externalLinkProps}>{websiteAuthorKeybaseUrl}</a></p>
+      <h2>Identity proofs</h2>
+      <p>This website:</p>
+      <ul>
+        <li>
+          is owned by {bookAuthorName}: <a href={`https://${KEYBASE_URL_PREFIX}/${bookAuthorKeybaseUsername}`} {...externalLinkProps}>{KEYBASE_URL_PREFIX}/{bookAuthorKeybaseUsername}</a>;
+        </li>
+        <li>
+          was built by {websiteAuthorName}: <a href={`https://${KEYBASE_URL_PREFIX}/${websiteAuthorKeybaseUsername}`} {...externalLinkProps}>{KEYBASE_URL_PREFIX}/{websiteAuthorKeybaseUsername}</a>.
+        </li>
+      </ul>
       <IrinelRamonaFlorescuLdJson />
       <IonutCristianFlorescuLdJson />
     </PageContent>

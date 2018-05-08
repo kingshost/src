@@ -6,7 +6,7 @@ import Book from '../components/Book';
 import BookTwoDonationForm from '../components/BookTwoDonationForm';
 import externalLinkProps from '../util/externalLinkProps';
 import {
-  bookTitle, bookOneTitle, bookTwoTitle, bookAuthorEmail, websiteAuthor, websiteAuthorEmail
+  bookTitle, bookOneTitle, bookTwoTitle, bookAuthorEmail, websiteAuthorName, websiteAuthorEmail
 } from '../util/meta';
 
 const DESCRIPTION = `Help me write ${bookTitle} - ${bookTwoTitle}!`;
@@ -76,7 +76,7 @@ const BookTwoPage = () => (
             <br />
             The fundraising campaign is managed by
             <br />
-            {websiteAuthor} - <a href={`mailto:${websiteAuthorEmail}`}>{websiteAuthorEmail}</a>.
+            {websiteAuthorName} - <a href={`mailto:${websiteAuthorEmail}`}>{websiteAuthorEmail}</a>.
           </p>
         </div>
       </div>

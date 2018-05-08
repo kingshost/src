@@ -3,12 +3,14 @@ exports.bookOneTitle = 'Book One';
 exports.bookOneFileName = 'kings-host-book-one-by-irinel-ramona-florescu';
 exports.bookOneHumanReadableFileName = 'King’s Host - Book One';
 exports.bookTwoTitle = 'Book Two';
+
 exports.bookAuthorName = 'Irinel Ramona Florescu';
 exports.bookAuthorEmail = 'irinel.florescu@gmail.com';
+exports.bookAuthorKeybaseUsername = 'irinelflorescu';
 
-exports.websiteAuthor = 'Ionut-Cristian Florescu';
+exports.websiteAuthorName = 'Ionut-Cristian Florescu';
 exports.websiteAuthorEmail = 'ionut.florescu@gmail.com';
-exports.websiteAuthorKeybaseUrl = 'keybase.io/icflorescu';
+exports.websiteAuthorKeybaseUsername = 'icflorescu';
 exports.themeColor = '#141414';
 exports.backgroundColor = '#000000';
 exports.fonts = 'https://fonts.googleapis.com/css?family=Cormorant:300|Raleway:300,400,400i,700';

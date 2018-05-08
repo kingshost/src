@@ -17,14 +17,16 @@ const AboutPage = () => (
   <Container>
     <PageContent>
       <div className="content-items">
-        <img
-          className="picture"
-          alt={bookAuthorName}
-          title={bookAuthorName}
-          src={`${assetsPath}/images/${AUTHOR_IMG_NAME}-w52.jpg`}
-          srcSet={AUTHOR_IMG_SRC_SET}
-          sizes="(max-width: 500px) 104px, 208px"
-        />
+        <div className="picture-wrapper">
+          <img
+            className="picture"
+            alt={bookAuthorName}
+            title={bookAuthorName}
+            src={`${assetsPath}/images/${AUTHOR_IMG_NAME}-w52.jpg`}
+            srcSet={AUTHOR_IMG_SRC_SET}
+            sizes="(max-width: 500px) 104px, 208px"
+          />
+        </div>
         <div className="text">
           <p className="no-indent">
             Welcome, dear reader!
@@ -80,14 +82,24 @@ const AboutPage = () => (
       </div>
     </PageContent>
     <style jsx>{`
-      .picture {
+      .picture-wrapper, .picture {
+        border-radius: 50%;
+      }
+
+      .picture-wrapper {
         width: 104px;
+        margin: 0.5em auto 1.5em;
+        box-shadow: inset 0 0 30px rgba(black, 50%);
+      }
+
+      .picture {
+        position: relative;
+        z-index: -1;
         display: block;
-        margin: 0 auto 1.5em;
       }
 
       @media (min-width: 500px) {
-        .picture {
+        .picture-wrapper {
           width: 208px;
         }
       }
@@ -98,8 +110,8 @@ const AboutPage = () => (
           align-items: flex-start;
         }
 
-        .picture {
-          margin: 0 36px 0 0;
+        .picture-wrapper {
+          margin: 1em 36px 0 0;
         }
       }
     `}</style>
