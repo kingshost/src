@@ -14,7 +14,7 @@ if (process.browser) {
   require('lazysizes');
   require('lazysizes/plugins/bgset/ls.bgset');
   require('next/router').default.onRouteChangeComplete = (url) => {
-    global.ga('send', 'pageview', url);
+    if (global.ga) global.ga('send', 'pageview', url);
   };
 }
 
