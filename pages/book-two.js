@@ -3,8 +3,11 @@ import Link from 'next/link';
 import Container from '../components/Container';
 import PageContent from '../components/PageContent';
 import Book from '../components/Book';
+import BookTwoDonationForm from '../components/BookTwoDonationForm';
 import externalLinkProps from '../util/externalLinkProps';
-import { bookTitle, bookOneTitle, bookTwoTitle, bookAuthorEmail } from '../util/meta';
+import {
+  bookTitle, bookOneTitle, bookTwoTitle, bookAuthorEmail, websiteAuthor, websiteAuthorEmail
+} from '../util/meta';
 
 const DESCRIPTION = `Help me write ${bookTitle} - ${bookTwoTitle}!`;
 
@@ -17,31 +20,7 @@ const BookTwoPage = () => (
           imgAlt={DESCRIPTION}
           srcPrefix="kings-host-book-two"
         >
-          {/* start PayPal code */}
-          <form
-            className="donation-form"
-            action="https://www.paypal.com/cgi-bin/webscr"
-            method="post"
-            target="_blank"
-          >
-            <input type="hidden" name="cmd" value="_s-xclick" />
-            <input type="hidden" name="hosted_button_id" value="TWACB3B43E4PY" />
-            <input
-              type="image"
-              src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
-              border="0"
-              name="submit"
-              alt="PayPal - The safer, easier way to pay online!"
-            />
-            <img
-              alt=""
-              border="0"
-              src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
-              width="1"
-              height="1"
-            />
-          </form>
-          {/* end of PayPal code */}
+          <BookTwoDonationForm />
         </Book>
         <div className="text">
           <p className="no-indent">
@@ -91,16 +70,18 @@ const BookTwoPage = () => (
           <p className="no-indent">
             Thank you!
           </p>
+          <hr />
+          <p className="no-indent no-justify">
+            <strong>Note to donors:</strong>
+            <br />
+            The fundraising campaign is managed by
+            <br />
+            {websiteAuthor} - <a href={`mailto:${websiteAuthorEmail}`}>{websiteAuthorEmail}</a>.
+          </p>
         </div>
       </div>
     </PageContent>
     <style jsx>{`
-      @import theme;
-
-      .donation-form {
-        padding-top: 6px;
-      }
-
       .desktop {
         display: none;
       }

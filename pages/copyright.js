@@ -5,7 +5,7 @@ import PageContent from '../components/PageContent';
 import IrinelRamonaFlorescuLdJson from '../components/IrinelRamonaFlorescuLdJson';
 import IonutCristianFlorescuLdJson from '../components/IonutCristianFlorescuLdJson';
 import externalLinkProps from '../util/externalLinkProps';
-import { bookAuthorName, websiteAuthor, bookTitle } from '../util/meta';
+import { bookAuthorName, websiteAuthor, bookTitle, websiteAuthorKeybaseUrl } from '../util/meta';
 
 const TITLE = 'Copyright & attribution';
 
@@ -73,6 +73,8 @@ const CopyrightPage = () => (
         by <a href="https://github.com/icflorescu" {...externalLinkProps}>{websiteAuthor}</a>.
         He's a nice guy and an outstanding web developer.
       </p>
+      <h2>Identity proof</h2>
+      <p>{websiteAuthor}: <a href={`https://${websiteAuthorKeybaseUrl}`} {...externalLinkProps}>{websiteAuthorKeybaseUrl}</a></p>
       <IrinelRamonaFlorescuLdJson />
       <IonutCristianFlorescuLdJson />
     </PageContent>

@@ -85,6 +85,13 @@ export default class MainApp extends App {
             }
           }
 
+          hr {
+            height: 1px;
+            border: 0;
+            background: rgba(color-txt, 10%);
+          }
+
+          /* text sections */
           .text {
             text-align: justify;
             p {
@@ -98,9 +105,11 @@ export default class MainApp extends App {
               &.no-margin-bottom {
                 margin-bottom: 0;
               }
+              &.no-justify {
+                text-align: initial;
+              }
             }
           }
-
 
           /* disable the annoying focus border */
           :focus {
