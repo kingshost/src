@@ -22,7 +22,7 @@ class BookOnePage extends PureComponent {
     this.onRequestBookClick.cache.clear();
   }
 
-  onRequestBookClick = memoize((format) => {
+  onRequestBookClick = memoize(format => () => {
     if (global.ga) global.ga('send', 'event', 'Book View Request', 'request', format);
   })
 
