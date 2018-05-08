@@ -8,11 +8,12 @@ git push
 git push --tags
 
 echo 'Building...'
+rm -rf .next
 yarn build
 
 cd out
 cp ../readme.md .
-cp ../out-files .
+cp -r ../out-files .
 git add -A
 git commit -m 'Automatic deployment commit'
 git push --force
