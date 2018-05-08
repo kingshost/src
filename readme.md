@@ -7,7 +7,7 @@ The source-code repo is [github.com/kings-host-book/src](https://github.com/king
 
 ## Where can I read the book?
 
-THE HOST is a fantasy book available at [the-host.cc](https://kingshost.cc).
+THE HOST is a fantasy book available at [kingshost.cc](https://kingshost.cc).
 
 [Book One](https://kingshost.cc/book-one/) can be downloaded for free and the author is looking forward for your support to help her write [the 2nd book](https://kingshost.cc/book-two/).
 
