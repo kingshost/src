@@ -12,7 +12,7 @@ yarn build
 
 cd out
 cp ../readme.md .
-cp ../out-files/* .
+cp ../out-files/*.* .
 git add -A
 git commit -m 'Automatic deployment commit'
 git push --force
