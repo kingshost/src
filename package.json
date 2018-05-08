@@ -1,0 +1,35 @@
+{
+  "name": "kingshost.cc",
+  "version": "0.5.0",
+  "description": "Website for King's Host book by Irinel-Ramona Florescu.",
+  "author": "Ionut-Cristian Florescu <ionut.florescu@gmail.com>",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "test": "eslint .",
+    "dev": "next dev",
+    "build-tools": "node tools/build-sitemap.js && node tools/build-manifest.js && node tools/adjust-static.js",
+    "build": "next build && next export && NODE_ENV=production yarn build-tools",
+    "start": "yarn build && serve out"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.3",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "serve": "^6.5.6"
+  },
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "lazysizes": "^4.0.2",
+    "lodash": "^4.17.10",
+    "next": "^6.0.1-canary",
+    "prop-types": "^15.6.1",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "styled-jsx-plugin-stylus": "^0.0.4",
+    "stylus": "^0.54.5"
+  }
+}
