@@ -18,3 +18,13 @@ exports.fonts = 'https://fonts.googleapis.com/css?family=Cormorant:300|Raleway:3
 exports.iconSizes = [32, 16, 36, 48, 72, 96, 144, 192];
 exports.appleIconSizes = [57, 60, 72, 76, 114, 120, 144, 152, 180];
 exports.splashIconSize = 512;
+
+// eslint-disable-next-line no-multi-assign
+const googleAnalyticsTrackingId = exports.googleAnalyticsTrackingId = 'UA-118921725-1';
+
+exports.googleAnalyticsCode = `
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '${googleAnalyticsTrackingId}');
+`.replace(/\n\s+/g, '');

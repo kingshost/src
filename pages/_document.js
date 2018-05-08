@@ -4,7 +4,9 @@ import flush from 'styled-jsx/server';
 import getConfig from 'next/config';
 
 import assetsPath from '../util/assetsPath';
-import { iconSizes, appleIconSizes, bookTitle, themeColor, fonts, websiteAuthor } from '../util/meta';
+import {
+  googleAnalyticsCode, iconSizes, appleIconSizes, bookTitle, themeColor, fonts, websiteAuthor, googleAnalyticsTrackingId
+} from '../util/meta';
 
 const { publicRuntimeConfig: { domain } } = getConfig();
 
@@ -61,6 +63,11 @@ export default class MainDocument extends Document {
           <meta name="twitter:creator" content="@iriflorescu" />
           <meta property="og:site_name" content={domain} />
           <meta property="og:image" content={IMAGE} />
+          <script async src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsTrackingId}`} />
+          <script
+            // eslint-disable-next-line react/no-danger
+            dangerouslySetInnerHTML={{ __html: googleAnalyticsCode }}
+          />
         </Head>
         <body>
           <Main />
