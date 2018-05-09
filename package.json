@@ -25,7 +25,7 @@
     "classnames": "^2.2.5",
     "lazysizes": "^4.0.2",
     "lodash": "^4.17.10",
-    "next": "^6.0.1-canary",
+    "next": "^6.0.1-canary.2",
     "prop-types": "^15.6.1",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
