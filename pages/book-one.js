@@ -76,7 +76,9 @@ class BookOnePage extends PureComponent {
               <p>
                 On a beautiful autumn evening, while father and son had business in the capital, a
                 small incident set off a chain of events that would entwine their future paths with
-                those of two Royal Guards and turn their peaceful life upside down.
+                those of two Royal Guards and turn their peaceful life upside down. And if that were
+                not bad enough, one of the guards is very distrustful of Kiran and the other is all
+                too friendly. And both are too sharp for comfort.
               </p>
               <p>
                 A new journey, new acquaintances, resentments, secrets and a war that is about
