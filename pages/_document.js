@@ -62,7 +62,13 @@ export default class MainDocument extends Document {
           <meta name="twitter:card" content="summary" />
           <meta name="twitter:creator" content="@iriflorescu" />
           <meta property="og:site_name" content={domain} />
+          <meta property="og:locale" content="en_US" />
+          <meta property="og:type" content="website" />
           <meta property="og:image" content={IMAGE} />
+          <meta property="og:image:type" content="image/jpeg" />
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="1500" />
+          <meta property="og:image:alt" content={bookTitle} />
           <script
             // eslint-disable-next-line react/no-danger
             dangerouslySetInnerHTML={{ __html: googleAnalyticsCode }}
