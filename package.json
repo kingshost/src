@@ -18,14 +18,14 @@
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.11.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
-    "eslint-plugin-react": "^7.7.0",
+    "eslint-plugin-react": "^7.8.0",
     "serve": "^6.5.6"
   },
   "dependencies": {
     "classnames": "^2.2.5",
     "lazysizes": "^4.0.2",
     "lodash": "^4.17.10",
-    "next": "^6.0.1-canary.2",
+    "next": "^6.0.1",
     "prop-types": "^15.6.1",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
