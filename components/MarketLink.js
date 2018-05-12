@@ -24,7 +24,7 @@ const MarketLink = ({ title, href, srcPrefix }) => {
       <style jsx>{`
         .market-link {
           font-size: 0;
-          margin: 0 8px 8px;
+          margin: 0 12px 8px;
           &.inactive {
             filter: grayscale(100%) opacity(15%);
           }
