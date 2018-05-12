@@ -8,53 +8,25 @@ const getCoverSrcSet = srcPrefix => COVER_IMG_WIDTHS
   .map(w => `${assetsPath}/images/${srcPrefix}-w${w}.jpg ${w}w`)
   .join(', ');
 
-const Book = ({ title, imgAlt, srcPrefix, children }) => (
+const Book = ({ srcPrefix, imgAlt, children }) => (
   <div className="book">
-    <div className="content">
-      <div className="title">{title}</div>
-      <div className="call-to-action">
-        {children}
-      </div>
-      <img
-        className="picture"
-        alt={imgAlt}
-        src={`${assetsPath}/images/${srcPrefix}-w52.jpg`}
-        srcSet={getCoverSrcSet(srcPrefix)}
-        sizes="(max-width: 500px) 104px, 208px"
-      />
-    </div>
+    {children}
+    <img
+      className="picture"
+      alt={imgAlt}
+      src={`${assetsPath}/images/${srcPrefix}-w52.jpg`}
+      srcSet={getCoverSrcSet(srcPrefix)}
+      sizes="(max-width: 500px) 104px, 208px"
+    />
     <style jsx>{`
       @import theme;
 
       .book {
-        margin: 0.5em 0 1.5em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        width: 208px;
+        margin: 0.5em auto 1.5em;
         @media (min-width: 1024px) {
           margin: 1em 36px 0 0;
         }
-      }
-
-      .content {
-        text-align: center;
-        text-transform: uppercase;
-      }
-
-      .title {
-        margin-bottom: 0.75em;
-        &::after {
-          display: block;
-          margin: 0.2em auto;
-          content: '';
-          width: 30px;
-          height: 1px;
-          background: rgba(color-txt, 50%);
-        }
-      }
-
-      .call-to-action {
-        padding: 0 7px 0 3px;
       }
 
       .picture {
@@ -66,7 +38,6 @@ const Book = ({ title, imgAlt, srcPrefix, children }) => (
 );
 
 Book.propTypes = {
-  title: PropTypes.string.isRequired,
   imgAlt: PropTypes.string.isRequired,
   srcPrefix: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired

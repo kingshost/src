@@ -33,6 +33,8 @@ const BookTwoDonationForm = () => (
       @import theme;
 
       .donation-form {
+        text-align: center;
+        margin-top: -0.5em;
         padding-top: 6px;
         background: transparent;
         border: 1px solid transparent;

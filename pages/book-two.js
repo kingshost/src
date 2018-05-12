@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Container from '../components/Container';
 import PageContent from '../components/PageContent';
 import Book from '../components/Book';
+import CallToAction from '../components/CallToAction';
 import BookTwoDonationForm from '../components/BookTwoDonationForm';
 import AmazonPricingNote from '../components/AmazonPricingNote';
 import externalLinkProps from '../util/externalLinkProps';
@@ -10,18 +11,20 @@ import {
   bookTitle, bookOneTitle, bookTwoTitle, bookAuthorEmail, websiteAuthorName, websiteAuthorEmail
 } from '../util/meta';
 
-const DESCRIPTION = `Help me write ${bookTitle} - ${bookTwoTitle}!`;
+const CALL_TO_ACTION_TITLE = 'Help me write';
+const DESCRIPTION = `${CALL_TO_ACTION_TITLE} ${bookTitle} - ${bookTwoTitle}!`;
 
 const BookTwoPage = () => (
   <Container>
     <PageContent>
       <div className="content-items">
         <Book
-          title="Help me write"
           imgAlt={DESCRIPTION}
           srcPrefix="kings-host-book-two"
         >
-          <BookTwoDonationForm />
+          <CallToAction title={CALL_TO_ACTION_TITLE}>
+            <BookTwoDonationForm />
+          </CallToAction>
         </Book>
         <div className="text">
           <p className="no-indent">
