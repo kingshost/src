@@ -49,8 +49,7 @@ const Book = ({ title, imgAlt, srcPrefix, children }) => (
           content: '';
           width: 30px;
           height: 1px;
-          background: color-txt;
-          transition: background 0.2s, transform 0.2s;
+          background: rgba(color-txt, 50%);
         }
       }
 
