@@ -4,6 +4,7 @@ import cn from 'classnames';
 
 import Container from '../components/Container';
 import PageContent from '../components/PageContent';
+import AmazonPricingNote from '../components/AmazonPricingNote';
 import { bookAuthorName, bookTitle } from '../util/meta';
 import assetsPath from '../util/assetsPath';
 import externalLinkProps from '../util/externalLinkProps';
@@ -89,7 +90,7 @@ class AboutPage extends PureComponent {
                 write and I was not done yet! Clearly I was losing my mind.
               </p>
               <p>
-                I am <Link href="/book-one"><a>offering you this book for free</a></Link> because
+                I am <Link href="/book-one"><a>offering you this book for free</a></Link>* because
                 writing it has been an incredible experience and I feel I should give something in
                 return for all the things I learned from those sharing their knowledge, whatever their
                 discipline. Writing has not become much easier than before, but it surely is growing on
@@ -97,6 +98,8 @@ class AboutPage extends PureComponent {
                 forget, even if only for a while, your daily worries. And leave
                 you <Link href="/book-two"><a>wanting for more</a></Link>.
               </p>
+              <hr />
+              <AmazonPricingNote />
             </div>
           </div>
         </PageContent>

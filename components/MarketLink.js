@@ -9,29 +9,30 @@ const getSrcSet = srcPrefix => DENSITIES
   .map(n => `${assetsPath}/images/${srcPrefix}-${n}x.png ${n}x`)
   .join(', ');
 
-const MarketLink = ({ title, href, srcPrefix }) => (
-  <div className={cn('market-link', { inactive: !href })}>
-    <a title={title} href={href} target="_blank" rel="noopener noreferrer">
-      <img
-        alt={title}
-        src={`${assetsPath}/images/${srcPrefix}-1x.png`}
-        srcSet={getSrcSet(srcPrefix)}
-      />
-    </a>
-    <style jsx>{`
-      .market-link {
-        font-size: 0;
-        margin-top: 6px;
-        @media (min-width: 700px) {
-          margin-left: 24px;
+const MarketLink = ({ title, href, srcPrefix }) => {
+  const inactive = !href;
+  const callToAction = `${title} ${inactive ? 'soon' : 'now'}`;
+  return (
+    <div className={cn('market-link', { inactive })}>
+      <a title={callToAction} href={href} target="_blank" rel="noopener noreferrer">
+        <img
+          alt={callToAction}
+          src={`${assetsPath}/images/${srcPrefix}-1x.png`}
+          srcSet={getSrcSet(srcPrefix)}
+        />
+      </a>
+      <style jsx>{`
+        .market-link {
+          font-size: 0;
+          margin: 0 8px 8px;
+          &.inactive {
+            filter: grayscale(100%) opacity(15%);
+          }
         }
-        &.inactive {
-          filter: grayscale(100%) opacity(15%);
-        }
-      }
-    `}</style>
-  </div>
-);
+      `}</style>
+    </div>
+  );
+};
 
 MarketLink.propTypes = {
   title: PropTypes.string.isRequired,

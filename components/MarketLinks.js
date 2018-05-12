@@ -1,56 +1,42 @@
 import PropTypes from 'prop-types';
 
-const MarketLinks = ({ children }) => (
+const MarketLinks = ({ title, children }) => (
   <div className="market-links">
-    <div className="title">Soon available on</div>
-    {children}
+    <div className="title">{title}</div>
+    <div className="market-link-items">
+      {children}
+    </div>
     <style jsx>{`
       @import theme;
 
       .market-links {
-        margin-top: 2em;
+        margin-top: 1em;
         text-align: center;
       }
 
       .title {
         text-transform: uppercase;
-        white-space: nowrap;
         &::after {
           display: block;
-          margin: 0.5em auto;
+          margin: 0.2em auto;
           content: '';
-          width: 60px;
+          width: 30px;
           height: 1px;
           background: rgba(color-txt, 50%);
         }
       }
 
-      @media (min-width: 700px) {
-        .market-links {
-          margin-bottom: 2em;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        .title {
-          text-align: left;
-          &::after {
-           display: none;
-          }
-        }
-      }
-
-      @media (min-width: 1024px) {
-        .market-links {
-          justify-content: space-between;
-        }
+      .market-link-items {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
       }
     `}</style>
   </div>
 );
 
 MarketLinks.propTypes = {
+  title: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired
 };
 

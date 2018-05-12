@@ -61,6 +61,37 @@ class BookOnePage extends PureComponent {
               </div>
             </Book>
             <div className="text">
+              <MarketLinks title="Get it on">
+                <MarketLink
+                  title={`${MARKET_LINK_TITLE_PREFIX}Kobo Rakuten`}
+                  srcPrefix="kobo"
+                  href="https://www.kobo.com/ww/en/ebook/king-s-host-book-one"
+                />
+                <MarketLink
+                  title={`${MARKET_LINK_TITLE_PREFIX}Amazon Kindle`}
+                  srcPrefix="amazon-kindle"
+                  href="https://www.amazon.com/kings-host-irinel-ramona-florescu-ebook/dp/b07d1dclm6"
+                />
+                <MarketLink
+                  title={`${MARKET_LINK_TITLE_PREFIX}Google Play`}
+                  srcPrefix="google-play"
+                />
+                <MarketLink
+                  title={`${MARKET_LINK_TITLE_PREFIX}Apple iBooks`}
+                  srcPrefix="ibooks"
+                />
+              </MarketLinks>
+              <MarketLinks title="Read it online on">
+                <MarketLink
+                  title={`${MARKET_LINK_TITLE_PREFIX}Inkitt`}
+                  srcPrefix="inkitt"
+                  href="https://www.inkitt.com/stories/fantasy/218165"
+                />
+                <MarketLink
+                  title={`${MARKET_LINK_TITLE_PREFIX}Wattpad`}
+                  srcPrefix="wattpad"
+                />
+              </MarketLinks>
               <p className="no-indent">
                 Things were going well for Val and Kiran. They had a comfortable home in the
                 countryside, a steady business that took them all over the kingdom and a small circle
@@ -87,11 +118,6 @@ class BookOnePage extends PureComponent {
               <p className="no-indent">
                 And what is the meaning of the son’s strange dreams, anyway?…
               </p>
-              <MarketLinks>
-                <MarketLink title={`${MARKET_LINK_TITLE_PREFIX}Amazon`} srcPrefix="amazon" />
-                <MarketLink title={`${MARKET_LINK_TITLE_PREFIX}Google Play`} srcPrefix="google-play" />
-                <MarketLink title={`${MARKET_LINK_TITLE_PREFIX}Inkitt`} srcPrefix="inkitt" />
-              </MarketLinks>
             </div>
           </div>
         </PageContent>

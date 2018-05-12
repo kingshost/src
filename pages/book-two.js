@@ -4,6 +4,7 @@ import Container from '../components/Container';
 import PageContent from '../components/PageContent';
 import Book from '../components/Book';
 import BookTwoDonationForm from '../components/BookTwoDonationForm';
+import AmazonPricingNote from '../components/AmazonPricingNote';
 import externalLinkProps from '../util/externalLinkProps';
 import {
   bookTitle, bookOneTitle, bookTwoTitle, bookAuthorEmail, websiteAuthorName, websiteAuthorEmail
@@ -31,7 +32,7 @@ const BookTwoPage = () => (
             I hope you enjoyed
             reading <strong>{bookOneTitle}</strong> of <strong>{bookTitle}</strong> as much as I
             enjoyed writing it. If you have not read it yet, do not hesitate to.
-            You can <Link href="/book-one"><a>get it here</a></Link>. It's free.
+            You can <Link href="/book-one"><a>get it here</a></Link>. It’s free*.
           </p>
           <p className="no-margin-bottom">
             What started off as an amusing personal exercise between projects, turned into taking a
@@ -50,7 +51,7 @@ const BookTwoPage = () => (
             If you enjoyed <strong>{bookOneTitle}</strong>, would you be willing to help me
             finish <strong>{bookTwoTitle}</strong> sooner? If so, please <strong>consider donating a
             small sum using the PayPal
-            button <span className="mobile">above</span><span className="desktop">on the left</span></strong>.
+            button <span className="mobile">above</span><span className="desktop">on the left</span>**</strong>.
             Your help will be much appreciated.
           </p>
           <p className="no-margin-top">
@@ -71,8 +72,9 @@ const BookTwoPage = () => (
             Thank you!
           </p>
           <hr />
+          <AmazonPricingNote />
           <p className="no-indent no-justify">
-            <strong>Note to donors:</strong>
+            <strong>**Note to donors:</strong>
             <br />
             The fundraising campaign is managed by
             <br />
