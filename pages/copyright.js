@@ -2,6 +2,7 @@ import Link from 'next/link';
 
 import Container from '../components/Container';
 import PageContent from '../components/PageContent';
+import AmazonPricingNote from '../components/AmazonPricingNote';
 import IrinelRamonaFlorescuLdJson from '../components/IrinelRamonaFlorescuLdJson';
 import IonutCristianFlorescuLdJson from '../components/IonutCristianFlorescuLdJson';
 import externalLinkProps from '../util/externalLinkProps';
@@ -59,7 +60,7 @@ const CopyrightPage = () => (
         a week and live it to dry out in the sun for a whole year.
       </em></p>
       <p><em>
-        Just kidding. But, since I made an effort to write and publish the first volume for FREE,
+        Just kidding. But, since I made an effort to write and publish the first volume for free*,
         I'll be very upset (and WILL enforce copyright) if you try to use it for commercial
         purposes. So please don't. <Link href="/book-two"><a>Help me</a></Link> write the second one instead.
       </em></p>
@@ -86,6 +87,8 @@ const CopyrightPage = () => (
           was built by {websiteAuthorName}: <a href={`https://${KEYBASE_URL_PREFIX}/${websiteAuthorKeybaseUsername}`} {...externalLinkProps}>{KEYBASE_URL_PREFIX}/{websiteAuthorKeybaseUsername}</a>.
         </li>
       </ul>
+      <hr />
+      <AmazonPricingNote />
       <IrinelRamonaFlorescuLdJson />
       <IonutCristianFlorescuLdJson />
     </PageContent>
