@@ -30,8 +30,27 @@ const BookTwoDonationForm = () => (
       height="1"
     />
     <style jsx>{`
+      @import theme;
+
       .donation-form {
         padding-top: 6px;
+        background: transparent;
+        border: 1px solid transparent;
+        animation: flash-border linear 8s infinite;
+        filter: saturate(100%);
+      }
+
+      @keyframes flash-border {
+        10%, 14%, 18% {
+          background: transparent;
+          border-color: transparent;
+          filter: saturate(100%);
+        }
+        12%, 16% {
+          background: rgba(color-txt, 5%);
+          border-color: rgba(color-txt, 10%);
+          filter: saturate(200%);
+        }
       }
     `}</style>
   </form>
