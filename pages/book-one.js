@@ -67,6 +67,7 @@ const BookOnePage = () => (
             <MarketLink
               title={`${MARKET_LINK_TITLE_PREFIX}Apple iBooks`}
               srcPrefix="ibooks"
+              href="https://itunes.apple.com/us/book/kings-host-book-one/id1383931942"
             />
           </MarketLinks>
           <MarketLinks title="Read it online on">
