@@ -51,9 +51,9 @@ const BookOnePage = () => (
         <div className="text">
           <MarketLinks title="Get it on">
             <MarketLink
-              title={`${MARKET_LINK_TITLE_PREFIX}Kobo Rakuten`}
-              srcPrefix="kobo"
-              href="https://www.kobo.com/ww/en/ebook/king-s-host-book-one"
+              title={`${MARKET_LINK_TITLE_PREFIX}Google Play`}
+              srcPrefix="google-play"
+              href="https://play.google.com/store/books/details/Irinel_Ramona_Florescu_King_s_Host_Book_One?id=fXpaDwAAQBAJ"
             />
             <MarketLink
               title={`${MARKET_LINK_TITLE_PREFIX}Amazon Kindle`}
@@ -61,8 +61,9 @@ const BookOnePage = () => (
               href="https://www.amazon.com/kings-host-irinel-ramona-florescu-ebook/dp/b07d1dclm6"
             />
             <MarketLink
-              title={`${MARKET_LINK_TITLE_PREFIX}Google Play`}
-              srcPrefix="google-play"
+              title={`${MARKET_LINK_TITLE_PREFIX}Kobo Rakuten`}
+              srcPrefix="kobo"
+              href="https://www.kobo.com/ww/en/ebook/king-s-host-book-one"
             />
             <MarketLink
               title={`${MARKET_LINK_TITLE_PREFIX}Apple iBooks`}
