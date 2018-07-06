@@ -46,6 +46,7 @@ module.exports = {
       'children': 'ignore'
     }],
     'react/jsx-closing-tag-location': 'off',
+    'react/jsx-one-expression-per-line': 'off',
     'react/sort-comp': ['warn', {
       order: [
         'static-methods',

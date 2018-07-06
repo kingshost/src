@@ -13,20 +13,20 @@
     "start": "yarn build && serve out"
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.3",
-    "eslint": "^4.19.1",
-    "eslint-config-airbnb": "^16.1.0",
-    "eslint-plugin-import": "^2.12.0",
-    "eslint-plugin-jsx-a11y": "^6.0.3",
-    "eslint-plugin-react": "^7.9.1",
+    "babel-eslint": "^8.2.5",
+    "eslint": "^5.0.1",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.1.0",
+    "eslint-plugin-react": "^7.10.0",
     "serve": "^9.1.0"
   },
   "dependencies": {
     "classnames": "^2.2.6",
     "lazysizes": "^4.0.4",
     "lodash": "^4.17.10",
-    "next": "^6.0.4-canary.8",
-    "prop-types": "^15.6.1",
+    "next": "^6.1.1",
+    "prop-types": "^15.6.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "styled-jsx-plugin-stylus": "^0.0.4",
