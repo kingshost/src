@@ -69,4 +69,3 @@ class DownloadLink extends PureComponent {
 }
 
 export default DownloadLink;
-

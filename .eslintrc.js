@@ -54,7 +54,8 @@ module.exports = {
         'everything-else',
         'render'
       ]
-    }]
+    }],
+    'react/destructuring-assignment': 'off' // this is way too obtrusive
   }
 }
 
