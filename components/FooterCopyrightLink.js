@@ -16,7 +16,7 @@ const FooterCopyrightLink = ({ router: { pathname } }) => (
         src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png"
       />
       <br className="break" />
-      <span className="text">© 2018 {bookAuthorName}</span>
+      <span className="text">© 2018 – 2019 {bookAuthorName}</span>
       <style jsx>{`
         @import theme;
 
@@ -47,7 +47,8 @@ const FooterCopyrightLink = ({ router: { pathname } }) => (
             display: none;
           }
 
-          .image, .text {
+          .image,
+          .text {
             vertical-align: middle;
           }
 
