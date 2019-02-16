@@ -15,7 +15,7 @@ module.exports = {
     'max-len': 'off',
     'class-methods-use-this': 'warn',
     'camelcase': 'off',
-    'quotes': ['warn', 'single'],
+    'quotes': ['warn', 'single', 'avoid-escape'],
     'comma-dangle': ['warn', 'never'],
     'no-plusplus': 'off',
     'radix': ['warn', 'as-needed'],
