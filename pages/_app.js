@@ -27,7 +27,7 @@ if (process.browser) {
 
   require('lazysizes');
   require('lazysizes/plugins/bgset/ls.bgset');
-  require('next/router').default.onRouteChangeComplete = url => {
+  require('next/router').default.onRouteChangeComplete = (url) => {
     if (global.ga) global.ga('send', 'pageview', url);
   };
 }
@@ -55,7 +55,10 @@ export default class MainApp extends App {
         <Head>
           <title>{title}</title>
           <meta itemProp="name" content={title} />
-          <meta property="og:url" content={`${domain}${asPath === '/' ? '' : `${asPath}/`}`} />
+          <meta
+            property="og:url"
+            content={`${domain}${asPath === '/' ? '' : `${asPath}/`}`}
+          />
           <meta property="og:title" content={title} />
           <meta property="og:description" content={description} />
           <meta name="description" content={description} />

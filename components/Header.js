@@ -6,15 +6,18 @@ import assetsPath from '../util/assetsPath';
 
 const IMG_WIDTHS = [240, 320, 470, 640, 940];
 
-const BG_SET = IMG_WIDTHS
-  .map(w => `${assetsPath}/images/title-w${w}.png ${w}w`)
-  .join(', ');
+const BG_SET = IMG_WIDTHS.map(
+  w => `${assetsPath}/images/title-w${w}.png ${w}w`
+).join(', ');
 
 const Header = () => (
   <header className="header">
     <Container>
       <Link href="/">
-        <a className="link" title={`${bookTitle} – A book by ${bookAuthorName}`}>
+        <a
+          className="link"
+          title={`${bookTitle} – A book by ${bookAuthorName}`}
+        >
           <h1
             className="title lazyload"
             style={{
@@ -22,7 +25,9 @@ const Header = () => (
             }}
             data-bgset={BG_SET}
             data-sizes="auto"
-          >{bookTitle}</h1>
+          >
+            {bookTitle}
+          </h1>
           <br />
           <h2 className="subtitle">A book by {bookAuthorName}</h2>
         </a>
@@ -41,7 +46,8 @@ const Header = () => (
         display: inline-block;
       }
 
-      .title, .subtitle {
+      .title,
+      .subtitle {
         display: inline-block;
         margin: 0;
       }

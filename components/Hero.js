@@ -6,12 +6,14 @@ import assetsPath from '../util/assetsPath';
 const IMG_WIDTHS = [360, 512, 768, 960, 1280, 1920];
 const AWAKE_TIMEOUT = 300;
 
-const getSrcSet = eyes => IMG_WIDTHS
-  .map(w => `${assetsPath}/images/hero${eyes ? '-eyes' : ''}-w${w}.${eyes ? 'png' : 'jpg'} ${w}w`)
-  .join(', ');
+const getSrcSet = eyes => IMG_WIDTHS.map(
+  w => `${assetsPath}/images/hero${eyes ? '-eyes' : ''}-w${w}.${
+    eyes ? 'png' : 'jpg'
+  } ${w}w`
+).join(', ');
 
 class Hero extends PureComponent {
-  state = { awake: false }
+  state = { awake: false };
 
   componentDidMount() {
     // eslint-disable-next-line react/no-did-mount-set-state
@@ -69,11 +71,26 @@ class Hero extends PureComponent {
           }
 
           @keyframes eyes {
-            from, 20%, 40%, 60%, 80%, to { filter: saturate(100%) brightness(1); }
-            30% { filter: saturate(95%) brightness(1.4); }
-            50% { filter: saturate(70%) brightness(0.8); }
-            70% { filter: saturate(85%) brightness(0.9); }
-            90% { filter: saturate(100%) brightness(1.2); }
+            from,
+            20%,
+            40%,
+            60%,
+            80%,
+            to {
+              filter: saturate(100%) brightness(1);
+            }
+            30% {
+              filter: saturate(95%) brightness(1.4);
+            }
+            50% {
+              filter: saturate(70%) brightness(0.8);
+            }
+            70% {
+              filter: saturate(85%) brightness(0.9);
+            }
+            90% {
+              filter: saturate(100%) brightness(1.2);
+            }
           }
         `}</style>
       </div>

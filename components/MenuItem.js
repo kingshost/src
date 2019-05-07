@@ -3,14 +3,19 @@ import cn from 'classnames';
 import { withRouter } from 'next/router';
 import Link from 'next/link';
 
-const MenuItem = ({ router: { pathname }, title, subtitle, description, route, flexOrder }) => (
+const MenuItem = ({
+  router: { pathname },
+  title,
+  subtitle,
+  description,
+  route,
+  flexOrder
+}) => (
   <Link href={route}>
     <a
-      className={
-        cn('menu-item', {
-          current: route === pathname || (route === '/' && pathname === '/index')
-        })
-      }
+      className={cn('menu-item', {
+        current: route === pathname || (route === '/' && pathname === '/index')
+      })}
       title={description}
     >
       <div>
@@ -31,7 +36,8 @@ const MenuItem = ({ router: { pathname }, title, subtitle, description, route, f
           align-items: center;
           height: 50px;
           border-top: 1px solid rgba(color-txt, 10%);
-          &:nth-child(2), &:nth-child(4) {
+          &:nth-child(2),
+          &:nth-child(4) {
             border-left: 1px solid rgba(color-txt, 10%);
           }
           &.current {
@@ -70,7 +76,9 @@ const MenuItem = ({ router: { pathname }, title, subtitle, description, route, f
           .menu-item {
             flex: none;
             display: block;
-            &, &:nth-child(2), &:nth-child(4) {
+            &,
+            &:nth-child(2),
+            &:nth-child(4) {
               border: 0;
             }
           }
@@ -82,7 +90,9 @@ const MenuItem = ({ router: { pathname }, title, subtitle, description, route, f
             height: 90px;
             flex: none;
             display: block;
-            &, &:nth-child(2), &:nth-child(4) {
+            &,
+            &:nth-child(2),
+            &:nth-child(4) {
               border: 0;
             }
           }

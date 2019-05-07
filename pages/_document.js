@@ -5,10 +5,18 @@ import getConfig from 'next/config';
 
 import assetsPath from '../util/assetsPath';
 import {
-  googleAnalyticsCode, iconSizes, appleIconSizes, bookTitle, themeColor, fonts, websiteAuthor
+  googleAnalyticsCode,
+  iconSizes,
+  appleIconSizes,
+  bookTitle,
+  themeColor,
+  fonts,
+  websiteAuthor
 } from '../util/meta';
 
-const { publicRuntimeConfig: { domain } } = getConfig();
+const {
+  publicRuntimeConfig: { domain }
+} = getConfig();
 
 const IMAGE = `${domain}${assetsPath}/images/kings-host-book-by-irinel-ramona-florescu.jpg`;
 
@@ -19,22 +27,22 @@ const icons = [
     type="image/x-icon"
     href={`${assetsPath}/icons/favicon.ico`}
   />,
-  ...(iconSizes.map(size => (
+  ...iconSizes.map(size => (
     <link
       key={`icon-${size}`}
       rel="icon"
       type="image/png"
       href={`${assetsPath}/icons/icon-${size}x${size}.png`}
     />
-  ))),
-  ...(appleIconSizes.map(size => (
+  )),
+  ...appleIconSizes.map(size => (
     <link
       key={`apple-icon-${size}`}
       rel="apple-touch-icon"
       type="image/png"
       href={`${assetsPath}/icons/icon-apple-${size}x${size}.png`}
     />
-  )))
+  ))
 ];
 
 export default class MainDocument extends Document {
@@ -48,9 +56,15 @@ export default class MainDocument extends Document {
     return (
       <html lang="en" itemScope itemType="http://schema.org/WebSite">
         <Head>
-          <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+          />
           <meta name="mobile-web-app-capable" content="yes" />
-          <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+          <meta
+            name="apple-mobile-web-app-status-bar-style"
+            content="black-translucent"
+          />
           <meta name="apple-mobile-web-app-title" content={bookTitle} />
           <meta name="application-name" content={bookTitle} />
           <meta name="theme-color" content={themeColor} />

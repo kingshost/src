@@ -13,9 +13,6 @@ module.exports = {
     readdirSync('./pages')
       .filter(item => !item.startsWith('_'))
       .map(item => item.slice(0, -3))
-      .map(item => ([
-        `/${item === 'index' ? '' : item}`,
-        { page: `/${item}` }
-      ]))
+      .map(item => [`/${item === 'index' ? '' : item}`, { page: `/${item}` }])
   )
 };

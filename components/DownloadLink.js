@@ -10,16 +10,24 @@ class DownloadLink extends PureComponent {
     fileName: PropTypes.string.isRequired,
     humanReadableFileName: PropTypes.string,
     open: PropTypes.bool
-  }
+  };
 
   static defaultProps = {
     humanReadableFileName: null,
     open: false
-  }
+  };
 
   onClick = () => {
-    if (global.ga) global.ga('send', 'event', 'Book View Request', 'request', this.props.format);
-  }
+    if (global.ga) {
+      global.ga(
+        'send',
+        'event',
+        'Book View Request',
+        'request',
+        this.props.format
+      );
+    }
+  };
 
   render() {
     const { title, fileName, format, humanReadableFileName, open } = this.props;
@@ -29,7 +37,9 @@ class DownloadLink extends PureComponent {
         className="download-link"
         title={`Download ${title} as ${uppercaseFormat} for free!`}
         href={`${assetsPath}/${fileName}.${format}`}
-        download={humanReadableFileName ? `${humanReadableFileName}.${format}` : null}
+        download={
+          humanReadableFileName ? `${humanReadableFileName}.${format}` : null
+        }
         target={open ? '_blank' : null}
         onClick={this.onClick}
       >
@@ -43,7 +53,7 @@ class DownloadLink extends PureComponent {
             text-align: center;
             text-decoration: none;
             color: rgba(black, 90%);
-            background: darken(saturation(color-link, 100%), 30%);;
+            background: darken(saturation(color-link, 100%), 30%);
             flex: 1 1 33.33%;
             margin-left: 1px;
             &:first-child {

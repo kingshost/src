@@ -7,7 +7,10 @@ const Footer = () => (
   <Container>
     <footer className="footer">
       <nav className="nav">
-        <FooterNavLink title="Cookies &amp; Privacy" route="/cookies-and-privacy" />
+        <FooterNavLink
+          title="Cookies &amp; Privacy"
+          route="/cookies-and-privacy"
+        />
         <FooterNavSeparator />
         <FooterNavLink title="Disclaimer" route="/disclaimer" />
         <FooterNavSeparator />

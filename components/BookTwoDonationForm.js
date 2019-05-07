@@ -5,16 +5,8 @@ const BookTwoDonationForm = () => (
     method="post"
     target="_blank"
   >
-    <input
-      type="hidden"
-      name="cmd"
-      value="_s-xclick"
-    />
-    <input
-      type="hidden"
-      name="hosted_button_id"
-      value="TWACB3B43E4PY"
-    />
+    <input type="hidden" name="cmd" value="_s-xclick" />
+    <input type="hidden" name="hosted_button_id" value="TWACB3B43E4PY" />
     <input
       type="image"
       src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
@@ -43,12 +35,15 @@ const BookTwoDonationForm = () => (
       }
 
       @keyframes flash-border {
-        10%, 14%, 18% {
+        10%,
+        14%,
+        18% {
           background: transparent;
           border-color: transparent;
           filter: saturate(100%);
         }
-        12%, 16% {
+        12%,
+        16% {
           background: rgba(color-txt, 5%);
           border-color: rgba(color-txt, 10%);
           filter: saturate(200%);

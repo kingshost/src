@@ -18,19 +18,27 @@ const ContactPage = () => (
       <p>
         This is my first book and hopefully won't be the last.
         <br />
-        I'll be grateful for any suggestion on how to improve my work and how to turn this passion
-        into a profitable activity.
+        I'll be grateful for any suggestion on how to improve my work and how to
+        turn this passion into a profitable activity.
       </p>
       <p>
-        So, if you think you can help me, please don't hesitate to drop me a line
-        at <a href={`mailto:${bookAuthorEmail}`} {...externalLinkProps}>{bookAuthorEmail}</a>.
+        So, if you think you can help me, please don't hesitate to drop me a
+        line at{' '}
+        <a href={`mailto:${bookAuthorEmail}`} {...externalLinkProps}>
+          {bookAuthorEmail}
+        </a>
+        .
       </p>
+      <p>Thank you!</p>
       <p>
-        Thank you!
+        <em>
+          P.S. Don't forget to{' '}
+          <Link href="/book-two">
+            <a>support the writing</a>
+          </Link>{' '}
+          of Book Two :-)
+        </em>
       </p>
-      <p><em>
-        P.S. Don't forget to <Link href="/book-two"><a>support the writing</a></Link> of Book Two :-)
-      </em></p>
       <IrinelRamonaFlorescuLdJson />
     </PageContent>
   </Container>
@@ -38,7 +46,8 @@ const ContactPage = () => (
 
 ContactPage.getInitialProps = () => ({
   title: 'Contact',
-  description: 'I\'ll be grateful for any suggestion on how to improve my work and how to turn the passion for writing into a profitable activity.'
+  description:
+    "I'll be grateful for any suggestion on how to improve my work and how to turn the passion for writing into a profitable activity."
 });
 
 export default ContactPage;

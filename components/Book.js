@@ -4,9 +4,9 @@ import assetsPath from '../util/assetsPath';
 
 const COVER_IMG_WIDTHS = [208, 416, 624];
 
-const getCoverSrcSet = srcPrefix => COVER_IMG_WIDTHS
-  .map(w => `${assetsPath}/images/${srcPrefix}-w${w}.jpg ${w}w`)
-  .join(', ');
+const getCoverSrcSet = srcPrefix => COVER_IMG_WIDTHS.map(
+  w => `${assetsPath}/images/${srcPrefix}-w${w}.jpg ${w}w`
+).join(', ');
 
 const Book = ({ srcPrefix, imgAlt, children }) => (
   <div className="book">

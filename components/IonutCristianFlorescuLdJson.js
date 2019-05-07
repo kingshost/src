@@ -1,6 +1,8 @@
 import getConfig from 'next/config';
 
-const { publicRuntimeConfig: { domain } } = getConfig();
+const {
+  publicRuntimeConfig: { domain }
+} = getConfig();
 
 const IonutCristianFlorescuLdJson = () => (
   <script

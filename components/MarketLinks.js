@@ -3,9 +3,7 @@ import PropTypes from 'prop-types';
 const MarketLinks = ({ title, children }) => (
   <div className="market-links">
     <div className="title">{title}</div>
-    <div className="market-link-items">
-      {children}
-    </div>
+    <div className="market-link-items">{children}</div>
     <style jsx>{`
       @import theme;
 

@@ -3,9 +3,7 @@ import PropTypes from 'prop-types';
 const CallToAction = ({ title, children }) => (
   <div>
     <div className="title">{title}</div>
-    <div className="content">
-      {children}
-    </div>
+    <div className="content">{children}</div>
     <style jsx>{`
       @import theme;
 
