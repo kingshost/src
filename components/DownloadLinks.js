@@ -14,7 +14,7 @@ const DownloadLinks = ({ children }) => (
 );
 
 DownloadLinks.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 };
 
 export default DownloadLinks;

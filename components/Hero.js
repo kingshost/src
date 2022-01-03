@@ -1,16 +1,14 @@
-import { PureComponent } from 'react';
 import cn from 'classnames';
-
+import { PureComponent } from 'react';
 import assetsPath from '../util/assetsPath';
 
 const IMG_WIDTHS = [360, 512, 768, 960, 1280, 1920];
 const AWAKE_TIMEOUT = 300;
 
-const getSrcSet = eyes => IMG_WIDTHS.map(
-  w => `${assetsPath}/images/hero${eyes ? '-eyes' : ''}-w${w}.${
-    eyes ? 'png' : 'jpg'
-  } ${w}w`
-).join(', ');
+const getSrcSet = (eyes) =>
+  IMG_WIDTHS.map((w) => `${assetsPath}/images/hero${eyes ? '-eyes' : ''}-w${w}.${eyes ? 'png' : 'jpg'} ${w}w`).join(
+    ', '
+  );
 
 class Hero extends PureComponent {
   state = { awake: false };

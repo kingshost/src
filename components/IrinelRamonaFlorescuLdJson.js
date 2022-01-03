@@ -1,7 +1,7 @@
 import getConfig from 'next/config';
 
 const {
-  publicRuntimeConfig: { domain }
+  publicRuntimeConfig: { domain },
 } = getConfig();
 
 const IrinelRamonaFlorescuLdJson = () => (
@@ -12,16 +12,16 @@ const IrinelRamonaFlorescuLdJson = () => (
       __html: JSON.stringify({
         '@context': 'http://schema.org',
         '@type': 'Person',
-        name: 'Irinel-Ramona Florescu',
-        url: domain,
-        sameAs: [
+        'name': 'Irinel-Ramona Florescu',
+        'url': domain,
+        'sameAs': [
           'http://www.interiordelight.ro',
           'https://www.behance.net/iflorescu',
           'https://www.facebook.com/irinel.florescu',
           'https://linkedin.com/in/iriflorescu',
-          'https://plus.google.com/+IrinelRamonaFlorescu'
-        ]
-      })
+          'https://plus.google.com/+IrinelRamonaFlorescu',
+        ],
+      }),
     }}
   />
 );

@@ -1,15 +1,14 @@
 import App, { Container } from 'next/app';
-import Head from 'next/head';
 import getConfig from 'next/config';
-
-import Header from '../components/Header';
+import Head from 'next/head';
 import Footer from '../components/Footer';
-import Hero from '../components/Hero';
 import Forest from '../components/Forest';
+import Header from '../components/Header';
+import Hero from '../components/Hero';
 import Menu from '../components/Menu';
 
 const {
-  publicRuntimeConfig: { domain }
+  publicRuntimeConfig: { domain },
 } = getConfig();
 
 if (process.browser) {
@@ -19,7 +18,7 @@ if (process.browser) {
       '%cHi there!',
       "This is not a theme slapped on top of a Wordpress deployment. It's a custom-made web application carefully crafted with React, Next.js, Node.js and a secret medley of unholy magic powders by Ionut-Cristian Florescu.",
       "He's a nice guy and an outstanding developer.",
-      "If you're seeing this, you're most likely interested in his work or want to build something similar. So... why don't you try to approach him at https://linkedin.com/in/icflorescu instead of just staring at the console?"
+      "If you're seeing this, you're most likely interested in his work or want to build something similar. So... why don't you try to approach him at https://linkedin.com/in/icflorescu instead of just staring at the console?",
     ].join('\n\n'),
     'font-size: 140%; color: #165b67; line-height: 1.5'
   );
@@ -47,7 +46,7 @@ export default class MainApp extends App {
     const {
       Component,
       pageProps,
-      router: { asPath }
+      router: { asPath },
     } = this.props;
     const { title, description } = pageProps;
     return (
@@ -55,10 +54,7 @@ export default class MainApp extends App {
         <Head>
           <title>{title}</title>
           <meta itemProp="name" content={title} />
-          <meta
-            property="og:url"
-            content={`${domain}${asPath === '/' ? '' : `${asPath}/`}`}
-          />
+          <meta property="og:url" content={`${domain}${asPath === '/' ? '' : `${asPath}/`}`} />
           <meta property="og:title" content={title} />
           <meta property="og:description" content={description} />
           <meta name="description" content={description} />

@@ -1,17 +1,12 @@
-import Container from '../components/Container';
-import PageContent from '../components/PageContent';
 import Book from '../components/Book';
-import MarketLinks from '../components/MarketLinks';
-import MarketLink from '../components/MarketLink';
 import CallToAction from '../components/CallToAction';
-import DownloadLinks from '../components/DownloadLinks';
+import Container from '../components/Container';
 import DownloadLink from '../components/DownloadLink';
-import {
-  bookTitle,
-  bookOneTitle,
-  bookOneFileName,
-  bookOneHumanReadableFileName
-} from '../util/meta';
+import DownloadLinks from '../components/DownloadLinks';
+import MarketLink from '../components/MarketLink';
+import MarketLinks from '../components/MarketLinks';
+import PageContent from '../components/PageContent';
+import { bookOneFileName, bookOneHumanReadableFileName, bookOneTitle, bookTitle } from '../util/meta';
 
 const FULL_TITLE = `${bookTitle} - ${bookOneTitle}`;
 const MARKET_LINK_TITLE_PREFIX = `Read ${FULL_TITLE} on `;
@@ -31,12 +26,7 @@ const callToAction = (
         humanReadableFileName={bookOneHumanReadableFileName}
         format="mobi"
       />
-      <DownloadLink
-        title={FULL_TITLE}
-        fileName={bookOneFileName}
-        format="pdf"
-        open
-      />
+      <DownloadLink title={FULL_TITLE} fileName={bookOneFileName} format="pdf" open />
     </DownloadLinks>
   </CallToAction>
 );
@@ -45,10 +35,7 @@ const BookOnePage = () => (
   <Container>
     <PageContent>
       <div className="content-items">
-        <Book
-          imgAlt={`Download ${FULL_TITLE} for free!`}
-          srcPrefix="kings-host-book-one"
-        >
+        <Book imgAlt={`Download ${FULL_TITLE} for free!`} srcPrefix="kings-host-book-one">
           <div className="desktop-call-to-action">{callToAction}</div>
         </Book>
         <div className="text">
@@ -83,36 +70,26 @@ const BookOnePage = () => (
           </MarketLinks>
           <div className="mobile-call-to-action">{callToAction}</div>
           <p className="no-indent">
-            Things were going well for Val and Kiran. They had a comfortable
-            home in the countryside, a steady business that took them all over
-            the kingdom and a small circle of loyal friends to return to after
-            their long trips. Sure they were a bit of an odd father and son pair
-            in the eyes of the villagers, but their trade was in need and people
-            liked them for being good-natured and obliging. Perhaps Kiran’s
-            affinity with living creatures was uncommon, though in truth he had
-            always been a little different. Amiable and caring, but not exactly
-            open about himself. His birth was shrouded in mystery and his father
-            seemed to enjoy watching people rack their brain trying to solve it.
-            It was a good thing folk were practical and, generally, more
-            interested in their knowledge and skill with medicine than their
-            peculiarities.
+            Things were going well for Val and Kiran. They had a comfortable home in the countryside, a steady business
+            that took them all over the kingdom and a small circle of loyal friends to return to after their long trips.
+            Sure they were a bit of an odd father and son pair in the eyes of the villagers, but their trade was in need
+            and people liked them for being good-natured and obliging. Perhaps Kiran’s affinity with living creatures
+            was uncommon, though in truth he had always been a little different. Amiable and caring, but not exactly
+            open about himself. His birth was shrouded in mystery and his father seemed to enjoy watching people rack
+            their brain trying to solve it. It was a good thing folk were practical and, generally, more interested in
+            their knowledge and skill with medicine than their peculiarities.
           </p>
           <p>
-            On a beautiful autumn evening, while father and son had business in
-            the capital, a small incident set off a chain of events that would
-            entwine their future paths with those of two Royal Guards and turn
-            their peaceful life upside down. And if that were not bad enough,
-            one of the guards is very distrustful of Kiran and the other is all
-            too friendly. And both are too sharp for comfort.
+            On a beautiful autumn evening, while father and son had business in the capital, a small incident set off a
+            chain of events that would entwine their future paths with those of two Royal Guards and turn their peaceful
+            life upside down. And if that were not bad enough, one of the guards is very distrustful of Kiran and the
+            other is all too friendly. And both are too sharp for comfort.
           </p>
           <p>
-            A new journey, new acquaintances, resentments, secrets and a war
-            that is about to break. Will Val and Kiran be able to return to
-            their former life?
+            A new journey, new acquaintances, resentments, secrets and a war that is about to break. Will Val and Kiran
+            be able to return to their former life?
           </p>
-          <p className="no-indent">
-            And what is the meaning of the son’s strange dreams, anyway?…
-          </p>
+          <p className="no-indent">And what is the meaning of the son’s strange dreams, anyway?…</p>
         </div>
       </div>
     </PageContent>
@@ -145,7 +122,7 @@ const BookOnePage = () => (
 
 BookOnePage.getInitialProps = () => ({
   title: `${bookOneTitle} - ${bookTitle}`,
-  description: `A new journey, new acquaintances, resentments, secrets and a war that is about to break. Will Val and Kiran be able to return to their former life? Find out by reading ${FULL_TITLE} for free!`
+  description: `A new journey, new acquaintances, resentments, secrets and a war that is about to break. Will Val and Kiran be able to return to their former life? Find out by reading ${FULL_TITLE} for free!`,
 });
 
 export default BookOnePage;

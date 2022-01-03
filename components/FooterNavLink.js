@@ -1,7 +1,7 @@
-import PropTypes from 'prop-types';
 import cn from 'classnames';
-import { withRouter } from 'next/router';
 import Link from 'next/link';
+import { withRouter } from 'next/router';
+import PropTypes from 'prop-types';
 
 const FooterNavLink = ({ router: { pathname }, title, route }) => (
   <Link href={route}>
@@ -35,7 +35,7 @@ const FooterNavLink = ({ router: { pathname }, title, route }) => (
 FooterNavLink.propTypes = {
   router: PropTypes.shape().isRequired,
   title: PropTypes.string.isRequired,
-  route: PropTypes.string.isRequired
+  route: PropTypes.string.isRequired,
 };
 
 export default withRouter(FooterNavLink);

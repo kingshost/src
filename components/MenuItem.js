@@ -1,20 +1,13 @@
-import PropTypes from 'prop-types';
 import cn from 'classnames';
-import { withRouter } from 'next/router';
 import Link from 'next/link';
+import { withRouter } from 'next/router';
+import PropTypes from 'prop-types';
 
-const MenuItem = ({
-  router: { pathname },
-  title,
-  subtitle,
-  description,
-  route,
-  flexOrder
-}) => (
+const MenuItem = ({ router: { pathname }, title, subtitle, description, route, flexOrder }) => (
   <Link href={route}>
     <a
       className={cn('menu-item', {
-        current: route === pathname || (route === '/' && pathname === '/index')
+        current: route === pathname || (route === '/' && pathname === '/index'),
       })}
       title={description}
     >
@@ -125,11 +118,11 @@ MenuItem.propTypes = {
   subtitle: PropTypes.string,
   description: PropTypes.string.isRequired,
   route: PropTypes.string.isRequired,
-  flexOrder: PropTypes.number.isRequired
+  flexOrder: PropTypes.number.isRequired,
 };
 
 MenuItem.defaultProps = {
-  subtitle: null
+  subtitle: null,
 };
 
 export default withRouter(MenuItem);

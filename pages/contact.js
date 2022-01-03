@@ -1,8 +1,7 @@
 import Link from 'next/link';
-
 import Container from '../components/Container';
-import PageContent from '../components/PageContent';
 import IrinelRamonaFlorescuLdJson from '../components/IrinelRamonaFlorescuLdJson';
+import PageContent from '../components/PageContent';
 import externalLinkProps from '../util/externalLinkProps';
 import { bookAuthorEmail } from '../util/meta';
 
@@ -18,12 +17,11 @@ const ContactPage = () => (
       <p>
         This is my first book and hopefully won't be the last.
         <br />
-        I'll be grateful for any suggestion on how to improve my work and how to
-        turn this passion into a profitable activity.
+        I'll be grateful for any suggestion on how to improve my work and how to turn this passion into a profitable
+        activity.
       </p>
       <p>
-        So, if you think you can help me, please don't hesitate to drop me a
-        line at{' '}
+        So, if you think you can help me, please don't hesitate to drop me a line at{' '}
         <a href={`mailto:${bookAuthorEmail}`} {...externalLinkProps}>
           {bookAuthorEmail}
         </a>
@@ -47,7 +45,7 @@ const ContactPage = () => (
 ContactPage.getInitialProps = () => ({
   title: 'Contact',
   description:
-    "I'll be grateful for any suggestion on how to improve my work and how to turn the passion for writing into a profitable activity."
+    "I'll be grateful for any suggestion on how to improve my work and how to turn the passion for writing into a profitable activity.",
 });
 
 export default ContactPage;

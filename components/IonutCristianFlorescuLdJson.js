@@ -1,7 +1,7 @@
 import getConfig from 'next/config';
 
 const {
-  publicRuntimeConfig: { domain }
+  publicRuntimeConfig: { domain },
 } = getConfig();
 
 const IonutCristianFlorescuLdJson = () => (
@@ -12,15 +12,15 @@ const IonutCristianFlorescuLdJson = () => (
       __html: JSON.stringify({
         '@context': 'http://schema.org',
         '@type': 'Person',
-        name: 'Ionut-Cristian Florescu',
-        url: domain,
-        sameAs: [
+        'name': 'Ionut-Cristian Florescu',
+        'url': domain,
+        'sameAs': [
           'https://github.com/icflorescu',
           'https://linkedin.com/in/icflorescu',
           'https://www.facebook.com/icflorescu',
-          'https://plus.google.com/+IonutCristianFlorescu'
-        ]
-      })
+          'https://plus.google.com/+IonutCristianFlorescu',
+        ],
+      }),
     }}
   />
 );

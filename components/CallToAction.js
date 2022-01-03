@@ -30,7 +30,7 @@ const CallToAction = ({ title, children }) => (
 
 CallToAction.propTypes = {
   title: PropTypes.string.isRequired,
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 };
 
 export default CallToAction;

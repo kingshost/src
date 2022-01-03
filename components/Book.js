@@ -1,12 +1,10 @@
 import PropTypes from 'prop-types';
-
 import assetsPath from '../util/assetsPath';
 
 const COVER_IMG_WIDTHS = [208, 416, 624];
 
-const getCoverSrcSet = srcPrefix => COVER_IMG_WIDTHS.map(
-  w => `${assetsPath}/images/${srcPrefix}-w${w}.jpg ${w}w`
-).join(', ');
+const getCoverSrcSet = (srcPrefix) =>
+  COVER_IMG_WIDTHS.map((w) => `${assetsPath}/images/${srcPrefix}-w${w}.jpg ${w}w`).join(', ');
 
 const Book = ({ srcPrefix, imgAlt, children }) => (
   <div className="book">
@@ -40,7 +38,7 @@ const Book = ({ srcPrefix, imgAlt, children }) => (
 Book.propTypes = {
   imgAlt: PropTypes.string.isRequired,
   srcPrefix: PropTypes.string.isRequired,
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 };
 
 export default Book;

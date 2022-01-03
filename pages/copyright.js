@@ -1,17 +1,16 @@
 import Link from 'next/link';
-
-import Container from '../components/Container';
-import PageContent from '../components/PageContent';
 import AmazonPricingNote from '../components/AmazonPricingNote';
-import IrinelRamonaFlorescuLdJson from '../components/IrinelRamonaFlorescuLdJson';
+import Container from '../components/Container';
 import IonutCristianFlorescuLdJson from '../components/IonutCristianFlorescuLdJson';
+import IrinelRamonaFlorescuLdJson from '../components/IrinelRamonaFlorescuLdJson';
+import PageContent from '../components/PageContent';
 import externalLinkProps from '../util/externalLinkProps';
 import {
-  bookAuthorName,
-  websiteAuthorName,
-  bookTitle,
   bookAuthorKeybaseUsername,
-  websiteAuthorKeybaseUsername
+  bookAuthorName,
+  bookTitle,
+  websiteAuthorKeybaseUsername,
+  websiteAuthorName,
 } from '../util/meta';
 
 const KEYBASE_URL_PREFIX = 'keybase.io';
@@ -23,22 +22,17 @@ const CopyrightPage = () => (
       <h1>{TITLE}</h1>
       <h2>The book</h2>
       <p>The book is distributed under CC BY-NC-ND 4.0 license.</p>
-      <img
-        alt="Creative Commons License"
-        src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png"
-      />
+      <img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" />
       <p>
-        This means you are free to share (copy and redistribute) the material in
-        any medium or format under the following terms:
+        This means you are free to share (copy and redistribute) the material in any medium or format under the
+        following terms:
       </p>
       <ul>
         <li>
           <strong>Attribution</strong>
           <br />
-          You must give appropriate credit, provide a link to the license, and
-          indicate if changes were made. You may do so in any reasonable manner,
-          but not in any way that suggests the licensor endorses you or your
-          use.
+          You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do
+          so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
         </li>
         <li>
           <strong>Non-Commercial</strong>
@@ -48,36 +42,27 @@ const CopyrightPage = () => (
         <li>
           <strong>No-Derivatives</strong>
           <br />
-          If you remix, transform, or build upon the material, you may not
-          distribute the modified material.
+          If you remix, transform, or build upon the material, you may not distribute the modified material.
         </li>
       </ul>
       <p>
-        The above is a human-readable summary of (and by no means a substitute)
-        the{' '}
-        <a
-          href="https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode"
-          {...externalLinkProps}
-        >
+        The above is a human-readable summary of (and by no means a substitute) the{' '}
+        <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode" {...externalLinkProps}>
           license
         </a>
         .
       </p>
       <p>
         <em>
-          Failure to comply with the aforementioned terms will attract severe
-          repercussions: I will hunt you down, slowly cut your belly, eat your
-          liver while you're still alive, then kill you, sell your kidneys, bury
-          you deep in the forest, exhume your body after a week and live it to
-          dry out in the sun for a whole year.
+          Failure to comply with the aforementioned terms will attract severe repercussions: I will hunt you down,
+          slowly cut your belly, eat your liver while you're still alive, then kill you, sell your kidneys, bury you
+          deep in the forest, exhume your body after a week and live it to dry out in the sun for a whole year.
         </em>
       </p>
       <p>
         <em>
-          Just kidding. But, since I made an effort to write and publish the
-          first volume for free*, I'll be very upset (and WILL enforce
-          copyright) if you try to use it for commercial purposes. So please
-          don't.{' '}
+          Just kidding. But, since I made an effort to write and publish the first volume for free*, I'll be very upset
+          (and WILL enforce copyright) if you try to use it for commercial purposes. So please don't.{' '}
           <Link href="/book-two">
             <a>Help me</a>
           </Link>{' '}
@@ -87,8 +72,7 @@ const CopyrightPage = () => (
       <h2>The book cover pictures</h2>
       <p>
         The book covers were rendered and post-processed by me ({bookAuthorName}
-        ). In case you didn't know, I'm also a CG Artist. You can see some of my
-        work{' '}
+        ). In case you didn't know, I'm also a CG Artist. You can see some of my work{' '}
         <a href="https://interiordelight.cc" {...externalLinkProps}>
           here
         </a>{' '}
@@ -100,8 +84,8 @@ const CopyrightPage = () => (
       </p>
       <h2>The website</h2>
       <p>
-        This website was built with JS, CSS, React, Next.js, Dragon's Blood
-        resin and various other peculiar dark magic powders by{' '}
+        This website was built with JS, CSS, React, Next.js, Dragon's Blood resin and various other peculiar dark magic
+        powders by{' '}
         <a href="https://github.com/icflorescu" {...externalLinkProps}>
           {websiteAuthorName}
         </a>
@@ -112,20 +96,14 @@ const CopyrightPage = () => (
       <ul>
         <li>
           is owned by {bookAuthorName}:{' '}
-          <a
-            href={`https://${KEYBASE_URL_PREFIX}/${bookAuthorKeybaseUsername}`}
-            {...externalLinkProps}
-          >
+          <a href={`https://${KEYBASE_URL_PREFIX}/${bookAuthorKeybaseUsername}`} {...externalLinkProps}>
             {KEYBASE_URL_PREFIX}/{bookAuthorKeybaseUsername}
           </a>
           ;
         </li>
         <li>
           was built by {websiteAuthorName}:{' '}
-          <a
-            href={`https://${KEYBASE_URL_PREFIX}/${websiteAuthorKeybaseUsername}`}
-            {...externalLinkProps}
-          >
+          <a href={`https://${KEYBASE_URL_PREFIX}/${websiteAuthorKeybaseUsername}`} {...externalLinkProps}>
             {KEYBASE_URL_PREFIX}/{websiteAuthorKeybaseUsername}
           </a>
           .
@@ -141,7 +119,7 @@ const CopyrightPage = () => (
 
 CopyrightPage.getInitialProps = () => ({
   title: `${TITLE} - ${bookTitle}`,
-  description: `${TITLE} in relation to ${bookTitle} book`
+  description: `${TITLE} in relation to ${bookTitle} book`,
 });
 
 export default CopyrightPage;

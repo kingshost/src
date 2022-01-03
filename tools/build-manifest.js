@@ -1,25 +1,19 @@
 const { writeFileSync } = require('fs');
+const { bookTitle, iconSizes, splashIconSize, themeColor, backgroundColor } = require('../util/meta');
 const {
-  bookTitle,
-  iconSizes,
-  splashIconSize,
-  themeColor,
-  backgroundColor
-} = require('../util/meta');
-const {
-  publicRuntimeConfig: { domain, assetsPath }
+  publicRuntimeConfig: { domain, assetsPath },
 } = require('../next.config');
 
 const icons = iconSizes
-  .map(size => ({
+  .map((size) => ({
     src: `${assetsPath}/icons/icon-${size}x${size}.png`,
-    sizes: `${size}x${size}`
+    sizes: `${size}x${size}`,
   }))
   .concat([
     {
       src: `${assetsPath}/icons/icon-splash-${splashIconSize}x${splashIconSize}.png`,
-      sizes: `${splashIconSize}x${splashIconSize}`
-    }
+      sizes: `${splashIconSize}x${splashIconSize}`,
+    },
   ]);
 
 writeFileSync(
@@ -31,6 +25,6 @@ writeFileSync(
     start_url: domain,
     display: 'standalone',
     theme_color: themeColor,
-    background_color: backgroundColor
+    background_color: backgroundColor,
   })
 );

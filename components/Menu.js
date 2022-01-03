@@ -1,21 +1,11 @@
-import MenuItem from './MenuItem';
 import Container from './Container';
+import MenuItem from './MenuItem';
 
 const Menu = () => (
   <Container>
     <nav className="menu">
-      <MenuItem
-        title="Home"
-        description="THE HOST – A book by Irinel Ramona Florescu"
-        route="/"
-        flexOrder={1}
-      />
-      <MenuItem
-        title="About"
-        description="A few words about the author"
-        route="/about"
-        flexOrder={4}
-      />
+      <MenuItem title="Home" description="THE HOST – A book by Irinel Ramona Florescu" route="/" flexOrder={1} />
+      <MenuItem title="About" description="A few words about the author" route="/about" flexOrder={4} />
       <MenuItem
         title="Book One"
         subtitle="read for free"

@@ -1,16 +1,13 @@
 import Container from './Container';
-import FooterNavLink from './FooterNavLink';
 import FooterCopyrightLink from './FooterCopyrightLink';
+import FooterNavLink from './FooterNavLink';
 import FooterNavSeparator from './FooterNavSeparator';
 
 const Footer = () => (
   <Container>
     <footer className="footer">
       <nav className="nav">
-        <FooterNavLink
-          title="Cookies &amp; Privacy"
-          route="/cookies-and-privacy"
-        />
+        <FooterNavLink title="Cookies &amp; Privacy" route="/cookies-and-privacy" />
         <FooterNavSeparator />
         <FooterNavLink title="Disclaimer" route="/disclaimer" />
         <FooterNavSeparator />

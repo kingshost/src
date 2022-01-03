@@ -1,8 +1,7 @@
-import PropTypes from 'prop-types';
 import cn from 'classnames';
-import { withRouter } from 'next/router';
 import Link from 'next/link';
-
+import { withRouter } from 'next/router';
+import PropTypes from 'prop-types';
 import { bookAuthorName } from '../util/meta';
 
 const ROUTE = '/copyright';
@@ -62,7 +61,7 @@ const FooterCopyrightLink = ({ router: { pathname } }) => (
 );
 
 FooterCopyrightLink.propTypes = {
-  router: PropTypes.shape().isRequired
+  router: PropTypes.shape().isRequired,
 };
 
 export default withRouter(FooterCopyrightLink);

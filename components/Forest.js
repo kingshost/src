@@ -1,14 +1,11 @@
-import { PureComponent } from 'react';
 import throttle from 'lodash/throttle';
-
+import { PureComponent } from 'react';
 import assetsPath from '../util/assetsPath';
 
 const IMG_WIDTHS = [360, 512, 768, 960, 1280, 1920];
 const THROTTLE_INTERVAL_MS = 100;
 
-const BG_SET = IMG_WIDTHS.map(
-  w => `${assetsPath}/images/forest-w${w}.jpg ${w}w`
-).join(', ');
+const BG_SET = IMG_WIDTHS.map((w) => `${assetsPath}/images/forest-w${w}.jpg ${w}w`).join(', ');
 
 const computePosition = () => (window.scrollY / (window.innerHeight - document.body.clientHeight)) * 100;
 
@@ -40,7 +37,7 @@ class Forest extends PureComponent {
         className="forest lazyload"
         style={{
           backgroundImage: `url(${assetsPath}/images/forest-w240.jpg)`,
-          backgroundPositionY: `${this.state.position}px`
+          backgroundPositionY: `${this.state.position}px`,
         }}
         data-bgset={BG_SET}
         data-sizes="auto"

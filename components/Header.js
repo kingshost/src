@@ -1,27 +1,21 @@
 import Link from 'next/link';
-
-import Container from './Container';
-import { bookTitle, bookAuthorName } from '../util/meta';
 import assetsPath from '../util/assetsPath';
+import { bookAuthorName, bookTitle } from '../util/meta';
+import Container from './Container';
 
 const IMG_WIDTHS = [240, 320, 470, 640, 940];
 
-const BG_SET = IMG_WIDTHS.map(
-  w => `${assetsPath}/images/title-w${w}.png ${w}w`
-).join(', ');
+const BG_SET = IMG_WIDTHS.map((w) => `${assetsPath}/images/title-w${w}.png ${w}w`).join(', ');
 
 const Header = () => (
   <header className="header">
     <Container>
       <Link href="/">
-        <a
-          className="link"
-          title={`${bookTitle} – A book by ${bookAuthorName}`}
-        >
+        <a className="link" title={`${bookTitle} – A book by ${bookAuthorName}`}>
           <h1
             className="title lazyload"
             style={{
-              backgroundImage: `url(${assetsPath}/images/title-w160.png)`
+              backgroundImage: `url(${assetsPath}/images/title-w160.png)`,
             }}
             data-bgset={BG_SET}
             data-sizes="auto"

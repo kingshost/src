@@ -1,6 +1,5 @@
-import { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-
+import { PureComponent } from 'react';
 import assetsPath from '../util/assetsPath';
 
 class DownloadLink extends PureComponent {
@@ -9,23 +8,17 @@ class DownloadLink extends PureComponent {
     format: PropTypes.string.isRequired,
     fileName: PropTypes.string.isRequired,
     humanReadableFileName: PropTypes.string,
-    open: PropTypes.bool
+    open: PropTypes.bool,
   };
 
   static defaultProps = {
     humanReadableFileName: null,
-    open: false
+    open: false,
   };
 
   onClick = () => {
     if (global.ga) {
-      global.ga(
-        'send',
-        'event',
-        'Book View Request',
-        'request',
-        this.props.format
-      );
+      global.ga('send', 'event', 'Book View Request', 'request', this.props.format);
     }
   };
 
@@ -37,9 +30,7 @@ class DownloadLink extends PureComponent {
         className="download-link"
         title={`Download ${title} as ${uppercaseFormat} for free!`}
         href={`${assetsPath}/${fileName}.${format}`}
-        download={
-          humanReadableFileName ? `${humanReadableFileName}.${format}` : null
-        }
+        download={humanReadableFileName ? `${humanReadableFileName}.${format}` : null}
         target={open ? '_blank' : null}
         onClick={this.onClick}
       >
