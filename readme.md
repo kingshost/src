@@ -3,7 +3,7 @@
 The code for a website to showcase King's Host book by [Irinel-Ramona Florescu](https://www.behance.net/iflorescu).
 The website was built with React and [Next.js](https://github.com/zeit/next.js/) by [Ionut-Cristian Florescu](https://www.linkedin.com/in/icflorescu/) and is currently hosted on [GitHub Pages](https://pages.github.com/).
 
-The source-code repo is [github.com/kingshost/src](https://github.com/kingshost/src), the build process outputs the minified code in the main organization repo [kingshost.github.io](https://kingshost.github.io).
+The source-code repo is [github.com/kingshost/src](https://github.com/kingshost/src), the build process outputs the minified code in the main organization repo [github.com/kingshost/kingshost.github.io](https://github.com/kingshost/kingshost.github.io).
 
 ## Where can I read the book?
 
