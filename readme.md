@@ -1,15 +1,15 @@
-# [kingshost.cc](https://kingshost.cc)
+# [kingshost.github.io](https://kingshost.github.io)
 
 The code for a website to showcase King's Host book by [Irinel-Ramona Florescu](https://www.behance.net/iflorescu).
 The website was built with React and [Next.js](https://github.com/zeit/next.js/) by [Ionut-Cristian Florescu](https://www.linkedin.com/in/icflorescu/) and is currently hosted on [GitHub Pages](https://pages.github.com/).
 
-The source-code repo is [github.com/kingshost/src](https://github.com/kingshost/src), the build process outputs the minified code in the main organization repo [github.com/kingshost/kingshost.github.io](https://github.com/kingshost/kingshost.github.io).
+The source-code repo is [github.com/kingshost/src](https://github.com/kingshost/src), the build process outputs the minified code in the main organization repo [kingshost.github.io](https://kingshost.github.io).
 
 ## Where can I read the book?
 
-THE HOST is a fantasy book available at [kingshost.cc](https://kingshost.cc).
+THE HOST is a fantasy book available at [kingshost.github.io](https://kingshost.github.io).
 
-[Book One](https://kingshost.cc/book-one/) can be downloaded for free and the author is looking forward for your support to help her write [the 2nd book](https://kingshost.cc/book-two/).
+[Book One](https://kingshost.github.io/book-one/) can be downloaded for free and the author is looking forward for your support to help her write [the 2nd book](https://kingshost.github.io/book-two/).
 
 ## License
 
@@ -19,7 +19,7 @@ The code in this repository is UNLICENSED. Which means I am not granting you the
 
 ### Book
 
-[King's Host book](https://kingshost.cc) is distributed under CC BY-NC-ND 4.0 license.
+[King's Host book](https://kingshost.github.io) is distributed under CC BY-NC-ND 4.0 license.
 
 ![CC BY-NC-ND 4.0](https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png)
 
