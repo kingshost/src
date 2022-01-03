@@ -15,7 +15,7 @@ cd out
 cp ../readme.md .
 cp -r ../out-files/. .
 git init
-git remote master https://github.com/kingshost/kingshost.github.io.git
+git remote add master https://github.com/kingshost/kingshost.github.io.git
 git add -A
 git commit -m 'Automatic deployment commit'
 git push master --force
