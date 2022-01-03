@@ -4,7 +4,7 @@ https://keybase.io/icflorescu
 
 I hereby claim:
 
-  * I am an admin of https://kingshost.cc
+  * I am an admin of https://kingshost.github.io
   * I am icflorescu (https://keybase.io/icflorescu) on keybase.
   * I have a public key with fingerprint 3573 FBCB 8F4D 6946 13D3  923F 6C94 B599 DA7D 52B8
 
@@ -21,112 +21,68 @@ To do so, I am signing this object:
       "uid": "81f4ec21b92302f647c6da28c2f90719",
       "username": "icflorescu"
     },
+    "merkle_root": {
+      "ctime": 1641224424,
+      "hash_meta": "82ee0c5bae7f3271caf88980ff89e99dd636c056ceaa6c9fd36657b179e775be",
+      "seqno": 21551451
+    },
+    "revoke": {
+      "sig_ids": [
+        "61733fc8af71e5ce62a1512e548c1c3223a6a725385fa0b8cd1d548b0d13d3390f"
+      ]
+    },
     "service": {
-      "hostname": "kingshost.cc",
+      "hostname": "kingshost.github.io",
       "protocol": "https:"
     },
     "type": "web_service_binding",
     "version": 1
   },
-  "ctime": 1525800546,
+  "ctime": 1641224444,
   "expire_in": 157680000,
-  "prev": "cb3e4a471ab2472d5e66603578afd61f0dd3e2c248cfdee6e1c55be4f2d89698",
-  "seqno": 47,
+  "prev": "3990046929c3ac14d95303a99a1bdd59252161b61035c81fe6af877b34d529fc",
+  "seqno": 123,
   "tag": "signature"
 }
 
 which yields the signature:
 
 -----BEGIN PGP MESSAGE-----
-Version: Keybase OpenPGP v2.0.76
+Version: Keybase OpenPGP v2.1.13
 Comment: https://keybase.io/crypto
 
-yMNzAnicbZJ9UFRVGMZ3JVDR1EQyaRK5QYoi3Xvu95YfMYPFKDgxNiSZy733nLtc
-l3aX/UKkjRgBGdPQIgWNPkgxh6RolSIgkfioFk2ywWaZIFCkbEzAJsAMO8vof/11
-5n3P8zznd95z2h4M0oXqs8rOVPg9qV/qfeeOuHTpo31yHiFbYS5hyCPMaHpBWRA5
-nEazBgkDQVKApEmJ5lkIZMhwgkiqlMyptEKSCEky4lSeQqKs8rIiI5rnBUmVWI6i
-VRZQJE0jDvCkRMQRqmYxIbvNrlmcOJZmeVrFDkFlICcyWA9pEdAqp4iMzIoilHjI
-AlnAxkyrI+DAcLLkQPGaFfdwYZzG+x/9fW6SwmmcIsgSxQtIAjzDyoCTMSuQZAhF
-SSFpiWJoFrKUoABAcRCSgsKIAkkzkGIZbprbNR0nUCqDFEDJGJIEKsfwCgclgH2q
-SPKUGBA6kN0ivYKwWlPULKsdORQX4YkjcN+tKSgw2sBd7mnMeB6OQB2vKNhts1ud
-VsWahXcynU6bwxBwOnNtAWkOko33QoyyZoHYiR1uZHdoVgthoLBScWqBVIoFrECS
-mD2OQDttmh0ZtYCC5TncJsnAOciNIxWZRozE8JQkA4YHkEUcx5H4VfDzQY5SSQhp
-BBTACIoKEeIQpbCsjBgVQEHkxMCcHSjbYiUMDI85JRPOdGgmi+R02RHhaT237QGd
-PlQXEjwj8MV0obMX3P94Iynz7266vnpwWfTOucXtmRlLmwb0DYU/eGP5NO/S8rqF
-HwyH9dVU3Eguqer3/s2UKoUd7QtCXEcS+d/WHopIME8ldPf0XqX/WRf7RkOYrf7h
-b9++XOf3JwmRlxvrDirfH7PPUC69e7BgYmTidOP8ZzvcI5Mld4r8dXO2lt/cWKom
-n91dtutmGe2pmdnS/tahk8c7N7540m8IW3k3tfZWc45tRXfLc3pfTJyv//Dh6D82
-Pc/CpuFFeZPV+SVLuCL90Zf14SnGlrapxMe2PDVZbtM92lYVl8HWr1kU1atnJnUX
-jn4RO+ZN2CFsjX6vL2JD0Yc1lafMpsqVz6DP9+65Xtocsr3K+wtT7zmwJantfPuS
-3eExv4+nXdWVzBv8prNvOAhVX9nce/xi0eSG0Kh4drMx3L04aP/jg9nHyrLNc1a9
-+iTKbc3/azGw91wa5c6/9tmsr/wmc0N3YmTidt930Te63ukOSr2SPLdon/6hdF/x
-soFi96kTs9M+Te2KHKpsbLqla524ffbPzlVDXa4dHasrPrq93F1A/jha23DNwHb9
-+3Szc//4HecTU9n6MxdfAqdfHyKF6ty9SWGWE+DnfdWzCK4jIac317f8wK6B6oL3
-V5hqNUrvKV0ntsZeyP+6J/jX8kciFqZ3rC8o7PppbNvEzKjEPRnFVH/M+Mex0W+u
-DR7zhpW9AFJqa+ddK/pkTc9/oM7KHw==
-=An24
+yMQHAnicbVNrbBRVGC0USB9QS2uggs+BIkILc+/MnceCJbblXWxTpNCgLnfu3Nkd
+druzzM4uj1oiJDRgC1GoRR7GV6GQugGTthjSYimEopU/kCIxIqSIJgKKoFigUu9U
+iIlx/kzuzPnOd75zvntyVGJCypBgXcuub6tKPx/S3bkhmoDPZfVXcpqlr+U8lVyA
+Dr5oUKcRxxswdc7D8QDyAo8FGelQ00VJUXkDaJIhEJ6nFGtUMmRAVc2QNaJRQZYV
+bGAkAcFAEPCCQCUo85jL4Qwz5KN22DZDDqMVkCwYrEIxRF1SRYbXBRUKhkRUUUOq
+qmNZR1BTWKHfirgVTJyGI3SaabFv7OAdlPc/+Ee6ecDYJKJoGMgKxVAWkQYljWmF
+WNN1FRNewEAUkI6AQiAEkq7zChFVhRdEHSBRGtQdHaRTgCFSAoHGRPLQkESZSDqG
+rM5QeRmoLjBC7RCuoAxtEiNo2TRColxVDldB7UCQem3Lclx7iWO6ICCJAEJRhCIb
+EUf83grqYLcTpJQnSMNUNgQoA4INRWGaDENRKRtUlwSJ8EgiFGM2vaELkoRkDcgq
+lWWkUaYkQleFLM4DAUJARIBJsGnMClC3e8T0MecinGc5JwFZEAzCAmMJIsKSwgAB
+SJGoEEAECAUsYRkiQUEG5jWF6EBn/zRed9MS2CJwr1W53eyYSQbJ3ageWhBgcUfc
+8zSf6fij2j+5hW3LsYgVZAC/44QjHtcfZ23YrVhNNe9DLq9mhnRGwCpi1I6YVoj5
+xZD/sU5k1tE1YdOmXtNFIFlSePa4fWjM3TJV5XlRUqFKBEyAqKtIYKGrKgZsA5AK
+2Y5KbJvZoiLCIqYSM1uWNZY/gqpB/vUSQIEJxT5GyhwMYSdqU66q8/irwxKGpCSM
+GD7UvUkJKcnpj+6XJ+2xgXD8m9LKkdp0kHbIF7x+Ygff9dSina29FbVbU/fvr+up
+vNu0JLH5yhO+ugVbskvX0Zd6r06dOBavPLEhe8EIqfudzC8upuaHluZvXT1nz84H
+r6+c4q87dP9MZWfqi7fzOuOjv2yqaague39e/coWsvfw2Rve576+VG9enHJ+Qu+q
+N/s7Ru/+86f5ZRO++iPp2jUxtyk0/vr6+1lvHek5sCK19VLXoq3TQu2Ru7/3/ZJY
+M6n+wQsfwLKMtrw3Pp5cPCfecbZvVzg9e9KBve9lFsBLFws9D/qLtb5Z+w7fctYc
+bFpWczpX95YPHOV8ZZOvXDUC8da8H2/fGP+JycWVmxmjhp+t3nZy4fZXxiw8sDPm
+bx1W3jXOPrcpq7vwyJ25eVzB822FGfu2Nxy90JOSEJ79dHbS4gX+J3f3JcdPVY+N
+XmhcWLN/029VJWzoxzsKGteNi51LLM1t6wts/HTexprTbzv3Zq2fiyffGpO5PDDz
+TGlx1Zoke13mz5uzrIIpx2PlvWdmN6eRz4rqb8oDznxfjult+8FaXJR78FhJ7TPP
+FhUlzd/RvSxrZO3Ilmvy+Nld1cmjp1a3F+XPDJ2uHdjYcfflPX81ih8Fv1sx9PJ0
+X3hRvD29aXmov2Tm1bobx2Q9eUtR9uXdOTMyygsnpvc0Hnk3+qE3K1rQPAB/bR6V
+P+NUy520bUs67jXUzF060F7y/XnrbylR/+I=
+=grcs
 -----END PGP MESSAGE-----
 
 And finally, I am proving ownership of this host by posting or
 appending to this document.
 
 View my publicly-auditable identity here: https://keybase.io/icflorescu
-
-==================================================================
-
-==================================================================
-https://keybase.io/irinelflorescu
---------------------------------------------------------------------
-
-I hereby claim:
-
-  * I am an admin of https://kingshost.cc
-  * I am irinelflorescu (https://keybase.io/irinelflorescu) on keybase.
-  * I have a public key ASDLX_qp_UwGCS-iA4fJnq3MaWC9LbcfdsfrCSwsx2wndwo
-
-To do so, I am signing this object:
-
-{
-  "body": {
-    "key": {
-      "eldest_kid": "0120cb5ffaa9fd4c06092fa20387c99eadcc6960bd2db71f76c7eb092c2cc76c27770a",
-      "host": "keybase.io",
-      "kid": "0120cb5ffaa9fd4c06092fa20387c99eadcc6960bd2db71f76c7eb092c2cc76c27770a",
-      "uid": "5cba37a049a6fc84ecd0b3741ef5de19",
-      "username": "irinelflorescu"
-    },
-    "merkle_root": {
-      "ctime": 1525802280,
-      "hash": "6616349d4833633765b0809cfa0c0d3e5a12a0022e690ff8a9427718300eee8689e7ff0418a606509275f5d6d47980793cbb8a3f0dd03dc7a00a53e9f8655d31",
-      "hash_meta": "4649a53d4b8c69833a5fb7319cf371d6a9c53a962f35440dccb6c2f516e763e3",
-      "seqno": 2507654
-    },
-    "service": {
-      "entropy": "oxLlgEkwy7UINeOw0rIg/+2J",
-      "hostname": "kingshost.cc",
-      "protocol": "https:"
-    },
-    "type": "web_service_binding",
-    "version": 2
-  },
-  "client": {
-    "name": "keybase.io go client",
-    "version": "1.0.47"
-  },
-  "ctime": 1525802294,
-  "expire_in": 504576000,
-  "prev": "e34d006f03496c0dde1ce3144ec5c88e077e8d0575dbc5e0245b315428873819",
-  "seqno": 12,
-  "tag": "signature"
-}
-
-which yields the signature:
-
-hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgy1/6qf1MBgkvogOHyZ6tzGlgvS23H3bH6wksLMdsJ3cKp3BheWxvYWTESpcCDMQg400AbwNJbA3eHOMUTsXIjgd+jQV128XgJFsxVCiHOBnEILsd2hfCKuukXcO6s3tUmyajiDZaUWAGh/ewY2QiXsIeAgHCo3NpZ8RA2H4+fSyYTOkOErEyjNLFEoJkHtFRlkpZTcX5qd8+rtsZBh0lcMIk1lmtw1h6esHyiOt2XDAu4R+JtFp8VH68BahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIMk5ZwI7c6l7ewcz2epiSuN+c1CWMEkxkBTsueROyf2xo3RhZ80CAqd2ZXJzaW9uAQ==
-
-And finally, I am proving ownership of this host by posting or
-appending to this document.
-
-View my publicly-auditable identity here: https://keybase.io/irinelflorescu
 
 ==================================================================

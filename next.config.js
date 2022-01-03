@@ -6,13 +6,14 @@ const production = process.env.NODE_ENV === 'production';
 
 module.exports = {
   publicRuntimeConfig: {
-    domain: production ? 'https://kingshost.cc' : 'http://localhost:3000',
-    assetsPath: `/static${production ? `/${version}` : ''}`
+    domain: production ? 'https://kingshost.github.io' : 'http://localhost:3000',
+    assetsPath: `/static${production ? `/${version}` : ''}`,
   },
-  exportPathMap: () => fromPairs(
-    readdirSync('./pages')
-      .filter(item => !item.startsWith('_'))
-      .map(item => item.slice(0, -3))
-      .map(item => [`/${item === 'index' ? '' : item}`, { page: `/${item}` }])
-  )
+  exportPathMap: () =>
+    fromPairs(
+      readdirSync('./pages')
+        .filter((item) => !item.startsWith('_'))
+        .map((item) => item.slice(0, -3))
+        .map((item) => [`/${item === 'index' ? '' : item}`, { page: `/${item}` }])
+    ),
 };
