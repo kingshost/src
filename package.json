@@ -13,9 +13,11 @@
     "start": "yarn build && serve out"
   },
   "devDependencies": {
-    "babel-eslint": "^10.1.0",
-    "eslint": "^8.6.0",
+    "@babel/eslint-parser": "^7.5.4",
+    "@types/node": "^16.11.21",
+    "eslint": "^8.7.0",
     "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.28.0",
@@ -26,7 +28,7 @@
     "lazysizes": "^5.3.1",
     "lodash": "^4.17.21",
     "next": "^8.1.0",
-    "prop-types": "^15.8.0",
+    "prop-types": "^15.8.1",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
     "styled-jsx-plugin-stylus": "^0.0.4",

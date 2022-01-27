@@ -27,6 +27,7 @@ class Forest extends PureComponent {
   }, THROTTLE_INTERVAL_MS);
 
   setForestRef = (ref) => {
+    // eslint-disable-next-line react/no-unused-class-component-methods
     this.forestRef = ref;
   };
 

@@ -33,6 +33,7 @@ class DownloadLink extends PureComponent {
         download={humanReadableFileName ? `${humanReadableFileName}.${format}` : null}
         target={open ? '_blank' : null}
         onClick={this.onClick}
+        rel="noreferrer"
       >
         {uppercaseFormat}
         <style jsx>{`

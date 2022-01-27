@@ -20,6 +20,7 @@ const {
 const IMAGE = `${domain}${assetsPath}/images/kings-host-book-by-irinel-ramona-florescu.jpg`;
 
 const icons = [
+  // eslint-disable-next-line react/no-invalid-html-attribute
   <link key="shortcut-icon" rel="shortcut icon" type="image/x-icon" href={`${assetsPath}/icons/favicon.ico`} />,
   ...iconSizes.map((size) => (
     <link key={`icon-${size}`} rel="icon" type="image/png" href={`${assetsPath}/icons/icon-${size}x${size}.png`} />

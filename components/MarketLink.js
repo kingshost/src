@@ -6,7 +6,7 @@ const DENSITIES = [1, 2, 3];
 
 const getSrcSet = (srcPrefix) => DENSITIES.map((n) => `${assetsPath}/images/${srcPrefix}-${n}x.png ${n}x`).join(', ');
 
-const MarketLink = ({ title, href, srcPrefix }) => {
+function MarketLink({ title, href, srcPrefix }) {
   const inactive = !href;
   const callToAction = `${title} ${inactive ? 'soon' : 'now'}`;
   return (
@@ -25,7 +25,7 @@ const MarketLink = ({ title, href, srcPrefix }) => {
       `}</style>
     </div>
   );
-};
+}
 
 MarketLink.propTypes = {
   title: PropTypes.string.isRequired,

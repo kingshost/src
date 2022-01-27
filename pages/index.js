@@ -1,6 +1,8 @@
 import { bookAuthorName, bookTitle } from '../util/meta';
 
-const HomePage = () => null;
+function HomePage() {
+  return null;
+}
 
 HomePage.getInitialProps = () => ({
   title: `${bookTitle} - A book by ${bookAuthorName}`,

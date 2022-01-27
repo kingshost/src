@@ -1,6 +1,6 @@
 const { readdirSync } = require('fs');
 const fromPairs = require('lodash/fromPairs');
-const { version } = require('./package');
+const { version } = require('./package.json');
 
 const production = process.env.NODE_ENV === 'production';
 
