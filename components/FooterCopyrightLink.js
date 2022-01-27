@@ -2,11 +2,17 @@ import cn from 'classnames';
 import Link from 'next/link';
 import { withRouter } from 'next/router';
 import PropTypes from 'prop-types';
+import { useEffect, useState } from 'react';
 import { bookAuthorName } from '../util/meta';
 
 const ROUTE = '/copyright';
 
 function FooterCopyrightLink({ router: { pathname } }) {
+  const [year, setYear] = useState(2022);
+  useEffect(() => {
+    setYear(new Date().getFullYear());
+  }, []);
+
   return (
     <Link href={ROUTE}>
       <a className={cn('link', { current: pathname === ROUTE })}>
@@ -16,7 +22,9 @@ function FooterCopyrightLink({ router: { pathname } }) {
           src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png"
         />
         <br className="break" />
-        <span className="text">© 2018 – 2019 {bookAuthorName}</span>
+        <span className="text">
+          © 2018 – {year} {bookAuthorName}
+        </span>
         <style jsx>{`
           @import theme;
 
